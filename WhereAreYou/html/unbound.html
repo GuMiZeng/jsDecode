@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解除绑定</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/common-xuhuan.css">
+</head>
+<body>
+<div class="bound-top">
+    <div class="filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="img">
+                        <img src="../img/bg.jpg" alt="">
+                    </div>
+                    <p>大圣</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bound-bottom container">
+    <button type="button" id="unbound" class="form-control btn btn-success" data-toggle="modal" data-target="#myModal">解除绑定</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title" id="myModalLabel">解除宠物绑定</h5>
+                </div>
+                <div class="modal-body">
+                    <span>确定要解除与宠物的绑定？ID号为：</span>
+                    <span id="petName">1024</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">关闭</button>
+                    <button type="button" id="submitUnbound" class="btn btn-primary btn-sm" data-dismiss="modal">提交申请</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        var $submitUnbound = $('#submitUnbound');
+        var $unbound = $('#unbound');
+        $submitUnbound.click(function () {
+            $unbound.text("审核中...");
+            $unbound.removeClass('btn-success');
+            $unbound.attr({'disabled':'disabled'});
+            $unbound.addClass('btn-danger');
+        });
+    });
+</script>
+</html>

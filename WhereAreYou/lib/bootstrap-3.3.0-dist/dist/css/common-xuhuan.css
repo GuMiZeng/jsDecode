@@ -1,0 +1,140 @@
+body{
+    font-family: '微软雅黑';
+    background: #ededed;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.top{
+
+}
+/*钱包*/
+.navbar .btn{
+    color: #333;
+    font-size: 16px;
+    margin: 8px 0;
+}
+.wallet-surplus{
+    margin: 36px 44px;
+    /*font-size: 14px;*/
+}
+.wallet-bg{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 210px;
+    background: url("../../../../img/bg.jpg");
+    background-size: cover;
+    overflow: hidden;
+    -webkit-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(10px);
+}
+.wallet-top a{
+    color: #000;
+}
+.handle{
+    margin: 120px 0;
+}
+.handle .col-xs-12{
+    margin: 5px 0;
+}
+.handle .btn, .way .btn{
+    width: 100%;
+}
+
+/*充值*/
+.recharge-top, .way, .money{
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+}
+.recharge-top a{
+    color: #000;
+}
+.recharge-bottom .col-xs-2{
+    padding: 6px 5px;
+    text-align: center;
+}
+.way svg{
+    font-size: 40px;
+    float: left;
+    padding: 0;
+    margin-top: 6px;
+}
+.way .container div{
+    text-align: left;
+}
+
+/*金额*/
+.money .col-xs-2,.money .col-xs-10{
+    padding: 0;
+}
+.money .form-group, .money p{
+    margin: 0px;
+}
+.money .form-control{
+    height: 40px;
+    border: none;
+}
+.money p{
+    line-height: 40px;
+}
+
+.content{
+    /*padding: 10px 10px 0 10px;*/
+    background-color: white;
+}
+.content .col-xs-12{
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+
+}
+.content h5,.content h6{
+    margin: 12px 0;
+}
+.content span{
+    line-height: 64px;
+}
+
+.bound-top{
+    width: 100%;
+    height: 210px;
+    background: url("../../../../img/bg.jpg");
+    background-size: cover;
+}
+.bound-top .col-xs-12{
+    margin-top: 50px;
+}
+.bound-top .filter{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.bound-top .img{
+    display:inline-block;
+    position:relative;
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    border-radius:50%;
+}
+.bound-top .img img{
+    width:auto;
+    height:100%;
+}
+.bound-top p{
+    color: #fff;
+}
+.bound-bottom{
+    margin-top: 128px;
+}
+.bound-bottom .modal-dialog,.recharge-bottom .modal-dialog{
+    margin-top: 150px;
+}
