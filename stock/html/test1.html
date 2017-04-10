@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <base href="<%=basePath%>">
+
+    <title>update_data.jsp</title>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+
+    <!--
+    <link rel="stylesheet" href="<%=path%>/css/data_text.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    -->
+    <script type="text/javascript">
+        //给table增加一行
+        function addTableRow() {
+            var table1 = document.getElementById('table1');
+            var cloneTab = document.getElementById('table2');
+            //alert(cloneTab.firstChild.firstChild.innerHTML);
+            //alert(cloneTab.firstChild.firstChild.cloneNode(true).innerHTML);
+            table1.firstChild.appendChild(cloneTab.firstChild.firstChild.cloneNode(true));
+
+            var v= table1.firstChild.childNodes;
+            var len = v.length;
+            for(var i=1;i<len;i++){
+                v[i].childNodes[0].firstChild.id=i;//给第一个单元格id赋值
+            }
+        }
+
+        //给table删除一行
+        function delTableRow(){
+            var table1 = document.getElementById('table1');
+            var isChecked = document.getElementsByName('isChecked');
+            var len = isChecked.length;
+            for(var i=len-1;i>=0;i--){
+                if(isChecked[i].checked==true){
+                    table1.firstChild.removeChild(isChecked[i].parentNode.parentNode);
+                    //alert(isChecked[i].id);
+                    //alert(isChecked[i].parentNode.parentNode.innerHTML);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+<table border="0" cellpadding="0" cellspacing="0" class="datalist" id="table1">
+    <tr>
+        <th width="38" nowrap="nowrap" style="width: 5%">0</th>
+        <th width="38" nowrap="nowrap" >00</th>
+        <th width="79" nowrap="nowrap" scope="col">1</th>
+        <th width="70" nowrap="nowrap" scope="col">2</th>
+        <th width="69" nowrap="nowrap" scope="col">3</th>
+        <th width="66" nowrap="nowrap" scope="col">4</th>
+        <th width="94" nowrap="nowrap" scope="col">5</th>
+        <th width="107" nowrap="nowrap" scope="col">6</th>
+    </tr>
+</table>
+
+<!--控制table的按钮-->
+<table>
+    <tr align="center">
+        <td colspan="10">
+            <input type="button"  value="增加" onclick= "addTableRow();"/>
+            <input type="button"  value="删除" onclick="delTableRow();"/>
+        </td>
+    </tr>
+</table>
+
+<!--模板table也叫做clone table style = "display:none"-->
+<table id='table2' style="display: none">
+    <tr>
+        <th><input type="checkbox" name="isChecked" /><input type="hidden" size="6" value=""/></th>
+        <th width="38" nowrap="nowrap" style="width: 5%"><input type="text" size="16" maxlength="50" value=""/></th>
+        <th width="79" nowrap="nowrap" scope="col"><input type="text"  size="16" maxlength="50" value=""/></th>
+        <th width="70" nowrap="nowrap" scope="col"><input type="text"  size="6" maxlength="10" value=""/></th>
+        <th width="69" nowrap="nowrap" scope="col">
+            <select size="1">
+                <option value="">请选择...</option>
+                <option value="1">1</option>
+                <option value="2">1</option>
+            </select>
+        </th>
+        <td width="100" nowrap="nowrap" scope="col"><input type="text"  class="date150"/></td>
+        <th width="94" nowrap="nowrap"  scope="col"><input type="text"  size="16" maxlength="50" value=""/></th>
+        <th width="71" nowrap="nowrap"  scope="col"><input type="text"  size="16" maxlength="50" value=""/></th>
+    </tr>
+</table>
+
+</body>
+</html>
+</pre><br>
+<br>
+<pre></pre>
+<pre></pre>
+<pre></pre>
