@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-size: 0.3rem;
 }
 .login{
     width: 100%;
@@ -21,7 +22,7 @@ body{
 .login-form{
     width: 5rem;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 .login-form input{
     height: 0.8rem;
@@ -32,11 +33,20 @@ body{
     padding-left: 0.5rem;
     background-color: rgba(255,255,255,0.5);
     outline: none;
+    margin: 0.3rem 0;
 }
 .login-form button{
-    margin-top: 1rem;
+    margin-top: 0.3rem;
     background-color: transparent;
     font-size: 0.5rem;
     border: none;
+    color: #b59758;
+    outline: none;
+}
+.register-info{
+    margin-top: 0.5rem;
+    font-size: 0.25rem;
+}
+.register-info a{
     color: #b59758;
 }
