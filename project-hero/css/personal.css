@@ -1,0 +1,220 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 0.25rem;
+    background-color: #f1f1f1;
+}
+.top-logo{
+    background-color: white;
+}
+.personal-path{
+    padding-left: 0.2rem;
+    color: #1f1f1f;
+    margin: 0.2rem 0;
+}
+.personal-top{
+    height: 1.5rem;
+}
+.GameZone{
+    border-top: 0.1rem solid #b59758;
+    float: left;
+    background-color: #fff;
+    width: 18%;
+    padding: 0.2rem;
+    text-align: center;
+}
+.GameZone-logo{
+    width: 1rem;
+    margin: 0 auto;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: 50%;
+    border: 0.1rem solid #b59758;
+    overflow: hidden;
+    text-align: center;
+}
+.GameZone-logo img{
+    width: 1rem;
+    height: 1rem;
+}
+.personal-search{
+    float: right;
+    width: 67%;
+    padding-top: 0.8rem;
+}
+.personal-search input,.personal-search select{
+    float: left;
+    border: 0.01rem solid #cccccc;
+    outline: none;
+}
+.personal-search input{
+    height: 0.73rem;
+    width: 2.5rem;
+    padding-left: 0.2rem;
+}
+.personal-search select{
+    height: 0.8rem;
+}
+.personal-content{
+    clear: both;
+    padding-top: 0.2rem;
+    background-color: white;
+}
+.head-img{
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    float: left;
+    margin: 0 0.2rem;
+}
+.content-list{
+    clear: both;
+    height: 0.6rem;
+    padding-top: 0.2rem;
+    position: relative;
+}
+.content-list ul li{
+    float: left;
+    width: 25%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-top: 0.08rem #bcbcbc solid;
+    text-align: center;
+    background-color: #ededed;
+}
+.active-border{
+    position: absolute;
+    width: 25%;
+    left: 0;
+    top:0.19rem;
+    height: 0.08rem;
+    background-color: #b59758;
+}
+.active{
+    color: #b59758;
+    font-weight: 700;
+    background-color: white !important;
+}
+.personal-info{
+    text-align: center;
+    padding-top: 1rem;
+}
+.split{
+    margin-top: 0.2rem;
+    padding-left: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    background-color: #f1f1f1;
+    color: #2a2a2a;
+    text-align: left;
+}
+.goodto-hero{
+    float: left;
+    width: 25%;
+    height: 2.4rem;
+}
+.goodto-hero img{
+    width: 100%;
+}
+.personal-honor{
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem 0;
+    color: #00a383;
+}
+.personal-honor div{
+    padding: 0.2rem 0.1rem;
+    border-bottom:0.01rem solid #00a383;
+}
+.personal-honor h5{
+    color: #ff7f1c;
+}
+.personal-honor small{
+    margin: 0.2rem 0;
+    display: block;
+}
+.personal-record{
+    width:100%;
+}
+.record-list{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.record-list ul{
+    white-space: nowrap;
+    padding-left: 0.2rem;
+    overflow-x: scroll;
+}
+.record-list ul li{
+    display: inline-block;
+    width: 70%;
+    background-color: #f2f2f2;
+}
+.record-list ul li img{
+    width: 33%;
+    float: left;
+    margin-right: 0.1rem;
+}
+.hero-li-active{
+    background-color: #ffffff !important;
+}
+.record-list-detail{
+    width: 100%;
+}
+.record-list-detail ul{
+    padding-left: 0.2rem;
+}
+.record-list-detail ul li{
+    margin: 0.05rem 0;
+    clear: both;
+    overflow: hidden;
+}
+.record-list-detail ul li img{
+    width: 18%;
+    float: left;
+    margin-right: 0.1rem;
+    line-height: 1rem;
+}
+.record-list-detail ul li p{
+    display: inline-block;
+    width: 40%;
+    line-height: 3.2;
+}
+.Failure{
+    color: #e3583c;
+    font-size: 0.3rem;
+    font-weight: 700;
+    margin: 0.3rem 0;
+}
+.victory{
+    color: #00a383;
+    font-size: 0.3rem;
+    font-weight: 700;
+    margin: 0.3rem 0;
+}
+.personal-hero{
+    width: 100%;
+}
+.personal-hero h4{
+    color: #00a383;
+    margin-left: 0.2rem;
+}
+.hero-info{
+    padding-left: 0.2rem;
+}
+.hero-info div{
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 0.01rem solid #00a383;
+    margin: 0.1rem 0;
+}
+.hero-info img{
+    width: 90%;
+    margin: 0 0.1rem;
+}
+/*隐藏 jq mobail 添加的标签*/
+#select-4-button>span{
+    display: none;
+}
