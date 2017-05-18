@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cab6bf9d-7d05-4936-97a7-c233c3521d61" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hero-lol/html/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hero-lol/js/login_register.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/.idea/Project.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/activity.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/jquery.mobile-1.4.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/jquery.mobile-1.4.5.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/newest.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/perimeter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/personal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/css/swiper-3.4.2.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/html/activity.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/html/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/html/newest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/html/perimeter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/html/personal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/003.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/004.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/005.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/006.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/007.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/008.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/009.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/010.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1477625066_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1480302057_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1487680642_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1487933322_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1487933563_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1489044858_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1489057717_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1489904159_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1489904499_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1489904601_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1489904685_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1490237878_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1492161714_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1493192781_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/lol_1493373532_sSmallImgUrl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/activity/to-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/geren.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/img.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/login-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/newest/pic-news0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/newest/pic-news5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/newest/pic-news8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/newest/pic-news9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/ad49.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/ad50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/ad51.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/base.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/flash72.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/flash80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/flash92.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/flash95.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/logo_1219.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/shop31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/shop36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/perimeter/shop37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/57007.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/DrMundo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/Draven.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/Ekko.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/Evelynn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/Ezreal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/Fiddlesticks.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/Gangplank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/Graves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Singed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Sion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Sivir.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Skarner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Sona.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Soraka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Swain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Syndra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/TahmKench.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Taliyah.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Talon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Taric.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Teemo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Thresh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Tristana.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Trundle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Tryndamere.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/TwistedFate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Twitch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Udyr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Urgot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Varus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Vayne.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Veigar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Velkoz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Vi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Viktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Vladimir.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Volibear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Warwick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Xayah.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Xerath.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/XinZhao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Yasuo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Yorick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Zac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Zed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Ziggs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Zilean.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/hero-head/Zyra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/info (1).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/info (2).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/personal-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/platinum-frame.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/platinum-icon-s61.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/platinum-loading-page-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/platinum-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/profileicon17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/personal/server4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/pic-big-v1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/img/zhoubian.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/activity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/auto-size.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/jquery-3.1.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/jquery.mobile-1.4.5.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/newest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/personal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-hero/js/swiper-3.4.2.min.js" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="activity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hero-lol/html/activity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2596">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hero-lol/html/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_register.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hero-lol/js/login_register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="94" column="48" lean-forward="true" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hero-lol/html/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hero-lol/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hero-lol/js/login/register.js" />
+        <option value="$PROJECT_DIR$/hero-lol/html/register.html" />
+        <option value="$PROJECT_DIR$/hero-lol/js/login_register.js" />
+        <option value="$PROJECT_DIR$/hero-lol/html/login.html" />
+        <option value="$PROJECT_DIR$/hero-lol/css/login.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="374" />
+    <option name="y" value="52" />
+    <option name="width" value="1456" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hero-lol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hero-lol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hero-lol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hero-lol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-hero" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hero-lol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cab6bf9d-7d05-4936-97a7-c233c3521d61" name="Default" comment="" />
+      <created>1495075672492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1495075672492</updated>
+      <workItem from="1495075674898" duration="4461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4461000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="374" y="52" width="1456" height="1100" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16643159" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hero-lol/html/activity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2596">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hero-lol/js/login/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hero-lol/html/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hero-lol/js/login_register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="94" column="48" lean-forward="true" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hero-lol/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hero-lol/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
