@@ -1,0 +1,37 @@
+body{
+	background: url(../../../../img/个人中心/bg.jpg) no-repeat center center fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment:fixed;
+	/*background-color: #ccc;*/
+}
+#all .container{
+	width: 100%;height: 100%;
+}
+.fix1,.fix2{
+	position: fixed;
+	top: 0;
+	z-index: 2;	
+}
+.fix1{	left: 0;}
+.fix2{	left: 16.7%;}
+.person-top{	padding: 0px;}
+.person-top p{
+
+	text-align: center;
+	color: white;
+	background-color: #555;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+}
+img{
+	/*-webkit-filter: opacity(0.9);*/
+	opacity: 0.9;
+}
+.top150{
+	margin-top: 50px;
+}
+.pad{
+	padding: 5px 0px;
+}

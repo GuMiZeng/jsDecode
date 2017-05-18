@@ -1,0 +1,121 @@
+.positionColor{
+    color: red;
+}
+.petDetailTop{
+    color: white;
+}
+.petDetailTop .col-xs-6 a{
+    color: white;
+}
+.petDetailTop .container-fluid{
+    margin: 0;
+    padding-top: 15px;
+    font-size: 16px;
+}
+.petDetailTop .col-xs-4,.petDetailTop .col-xs-5,.petDetailTop .col-xs-2{
+    padding: 0;
+}
+.petDetailTop .col-xs-2{
+    padding: 40px 0 10px 0;
+}
+.petDetailTop .col-xs-12{
+    padding-top: 50px;
+}
+.headPortrait{
+    margin: 0 auto;
+    overflow: hidden;
+    height:100px;
+    width: 100px;
+    border:none;
+    border-radius: 50%;
+    background: url("../../../../img/headPic.jpg")no-repeat center center;
+    background-size: cover;
+}
+.petBg{
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background:url("../../../../img/petbg.jpg")no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    -webkit-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(10px);
+}
+
+.option .col-xs-4{
+    padding-top: 42px;
+    padding-bottom: 10px;
+}
+.option .col-xs-4 a{
+    color: white;
+}
+.activeBorder a{
+    padding: 10px 25px;
+    border: 3px solid transparent;
+    border-bottom-color:#449d44 ;
+}
+.petDetail .col-xs-12{
+    padding:5px 6px 10px 2px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    border-bottom-color: #ccc;
+}
+.petDetail{
+    color: #666;
+}
+.petDetail .btn{
+    border:none;
+    border-radius: 0;
+}
+.petDetail .dropdown-menu{
+    min-width: 0;
+}
+/*.chooseSex{*/
+    /*border: 10px double #449d44;*/
+    /*padding:2px;*/
+    /*height: 20px;*/
+    /*width: 20px;*/
+    /*border-radius: 50%;*/
+    /*cursor: pointer;*/
+    /*-webkit-transition: 0.3s;*/
+    /*-moz-transition: 0.3s;*/
+    /*-o-transition: 0.3s;*/
+    /*transition: 0.3s;*/
+/*}*/
+/*.sexChecked{*/
+    /*color: #449d44;*/
+    /*border: 10px solid #449d44;*/
+    /*padding:2px;*/
+    /*height: 20px;*/
+    /*width: 20px;*/
+    /*border-radius: 50%;*/
+    /*cursor: pointer;*/
+    /*-webkit-transition: 0.3s;*/
+    /*-moz-transition: 0.3s;*/
+    /*-o-transition: 0.3s;*/
+    /*transition: 0.3s;*/
+/*}*/
+
+/*运动内容*/
+.sportContent{
+    color: #666;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.sportChart{
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+.sportChart .row{
+    background-color: white;
+}
+.sportChart canvas{
+    padding: 20px;
+}
+/*照片*/
+.border{border-bottom: 2px solid red;}
+.pad{
+    padding: 5px 0;
+}

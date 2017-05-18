@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title>购物车列表</title>
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.0-dist/dist/css/buyList.css"/>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="container">
+					<form action="" method="post">
+							<ul style="padding: 0; height: auto;">
+								<li class="li1">
+									<input type="checkbox" class="pull-left " name="checkbox" id="" value="" />
+
+									<img src="../img/petStore/g1.jpg" class="img-responsive pull-left marginR marginL"/>
+
+									<div class="introduce pull-left marginR ">
+										Add Mate 上等鸡蛋小馒头 甘薯味 50g 甘薯味
+									</div>
+									<div class="btnNum btn-group pull-left marginR" role="group" aria-label="...">
+										<button type="button" class="btn subtract1">-</button>
+										<button type="button" class="btn num1">1</button>
+										<button type="button" class="btn add1">+</button>
+									</div>
+									<div class="price price1 pull-right">
+										￥<b>36</b>
+										<span id="spnprice1">36</span>
+									</div>
+								</li>
+								<li class="li1">
+
+									<input type="checkbox" class="pull-left " name="checkbox" value="" />
+
+									<img src="../img/petStore/g1.jpg" class="img-responsive pull-left marginR marginL"/>
+									<div class="introduce pull-left marginR ">
+										Add Mate 上等鸡蛋小馒头 甘薯味 50g 甘薯味
+									</div>
+									<div class="btnNum btn-group pull-left marginR" role="group" aria-label="...">
+										<button type="button" class="btn subtract2">-</button>
+										<button type="button" class="btn num2">1</button>
+										<button type="button" class="btn add2">+</button>
+									</div>
+									<div class="price price2 pull-right">
+										￥<b>27</b>
+										<span id="spnprice2">27</span>
+									</div>
+								</li>
+							</ul>
+
+						<!--</div>-->
+						<div class="col-xs-12 submitbox " style="padding: 0;">
+							<div class="form-control input-group" style="padding: 0;">
+								<div class="all">
+									<input type="checkbox" id="allcheck" name="checkbox"/><span id="spnAll">全选</span>
+								</div>
+								<div class=" price divmoney">
+									总额：￥
+									<span id="allmoney"  class="price">0</span>
+								</div>
+
+								<button class="btn btn-success pull-right btnSubmit">结算</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+	<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#spnprice1').hide();
+			$('#spnprice2').hide();
+			function fnli1show(){
+				$('.add1').click(function(){
+				var num1 = $('.num1').html();
+				
+				num1++;
+				$('.num1').html(num1++);
+				$('.num1').show();
+				
+				sum( 36 );
+				
+				var spnprice1 = Number( $('#spnprice1').html());
+				var spnprice2 = Number( $('#spnprice2').html());
+				var allmoney = Number( spnprice1 + spnprice2 ) ;
+				console.log(typeof(allmoney));
+				$('#allmoney').html( allmoney );
+				})
+				$('.subtract1').click(function(){
+					var num1 = $('.num1').html();
+					
+					if( num1 == 1 ){
+						return false;
+					}
+					num1--;
+					
+					$('.num1').html(num1--);
+					$('.num1').show();
+					sum( 36 );
+					
+					var spnprice1 = Number( $('#spnprice1').html());
+					var spnprice2 = Number( $('#spnprice2').html());
+					var allmoney = Number( spnprice1 + spnprice2 ) ;
+					console.log(typeof(allmoney));
+					$('#allmoney').html( allmoney );
+				})
+				function sum( price ){
+					var num = $('.num1').html();
+					var money = Number( num * price );
+					
+					console.log(money);
+					$('.price1 b').hide();
+					$('.num1').show();
+					$('#spnprice1').html( money );
+					$('#spnprice1').show();
+				}
+			}
+			
+			function fnli2show(){
+				
+			}
+			$('.add2').click(function(){
+				var num2 = $('.num2').html();
+				
+				num2++;
+				$('.num2').html(num2++);
+				sum( 27 );
+				
+				var spnprice1 = Number( $('#spnprice1').html());
+				var spnprice2 = Number( $('#spnprice2').html());
+				var allmoney = Number( spnprice1 + spnprice2 ) ;
+				console.log(typeof(allmoney));
+				$('#allmoney').html( allmoney );
+			})
+			$('.subtract2').click(function(){
+				var num2 = $('.num2').html();
+				
+				if( num2 == 1 ){
+					return false;
+				}
+				num2--;
+				
+				$('.num2').html(num2--);
+				sum( 27 );
+				
+				var spnprice1 = Number( $('#spnprice1').html());
+				var spnprice2 = Number( $('#spnprice2').html());
+				var allmoney = Number( spnprice1 + spnprice2 ) ;
+				console.log(typeof(allmoney));
+				$('#allmoney').html( allmoney );
+			})
+			function sum( price ){
+				var num = $('.num2').html();
+				var money = Number( num * price );
+				
+				console.log(money);
+				$('.price2 b').hide();
+				$('#spnprice2').html( money );
+				$('#spnprice2').show();
+				
+			}
+			if(  $("[name='checkbox']").attr("checked") == true ){
+				
+				var spnprice1 = Number( $('#spnprice1').html());
+				var spnprice2 = Number( $('#spnprice2').html());
+				var allmoney = Number( spnprice1 + spnprice2 ) ;
+				console.log(typeof(allmoney));
+				$('#allmoney').html( allmoney );
+			}
+				
+			function fnCheckAll(){
+			var _ischecked = false;
+		
+			$('#spnAll').click(function(){
+				_ischecked = !_ischecked;
+				if( _ischecked ){
+					  $("[name='checkbox']").attr("checked",true);
+					
+				}else{
+					  $("[name='checkbox']").attr("checked",false);
+					
+				}
+				
+			});
+			
+			}
+	
+			fnCheckAll();
+			fnli1show();
+			fnli2show();
+			
+		})
+		
+	</script>
+	
+</html>

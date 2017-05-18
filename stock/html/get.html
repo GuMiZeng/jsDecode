@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../public/js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<div id="file"><h2>通过AJAX改变文本</h2>  </div>
+<button id="btn" type="button" onclick="show()">改变内容</button>
+
+</body>
+<script type="text/javascript">
+    function show()
+    {
+        var xmlhttp;
+        if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                document.getElementById("file").innerHTML=xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET","../file/title.text",true);
+        xmlhttp.send();
+    }
+
+</script>
+<script type="text/javascript" src="../js/get.js"></script>
+</html>
