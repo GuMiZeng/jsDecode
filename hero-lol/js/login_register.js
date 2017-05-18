@@ -132,7 +132,7 @@ function loginSuccess(data) {
     // setTimeout(function () {
     //     $('.success-login').fadeOut();
     // },300);
-    // $('.login-div').hide();
-    // $('.login-success').show();
-    // $('#userName').text(data.userName);
+    $('.login-div').hide();
+    $('.login-success').show();
+    $('.userName').text(data.userName);
 }

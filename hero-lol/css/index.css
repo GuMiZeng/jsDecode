@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 0.3rem;
+    color: #2a2a2a;
 }
 hr{
     margin: 0.2rem 0;
@@ -72,7 +73,7 @@ hr{
     float: left;
     width: 1.3rem;
     height: 1.3rem;
-    margin: 0 0.08rem;
+    margin: 0.1rem 0.08rem;
     text-align: center;
     border: 0.02rem solid #b59758;
     border-radius: 50%;
@@ -97,6 +98,7 @@ hr{
     padding: 0.5rem 0;
     border: 0.01rem solid transparent;
     border-bottom-color: #cccccc;
+    overflow: hidden;
 }
 .recommend{
     width: 90%;
