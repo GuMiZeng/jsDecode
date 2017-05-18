@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cab6bf9d-7d05-4936-97a7-c233c3521d61" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/css/activity.css" afterPath="$PROJECT_DIR$/hero-lol/css/activity.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/css/index.css" afterPath="$PROJECT_DIR$/hero-lol/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/css/login.css" afterPath="$PROJECT_DIR$/hero-lol/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/css/newest.css" afterPath="$PROJECT_DIR$/hero-lol/css/newest.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/css/perimeter.css" afterPath="$PROJECT_DIR$/hero-lol/css/perimeter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/css/personal.css" afterPath="$PROJECT_DIR$/hero-lol/css/personal.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/html/index.html" afterPath="$PROJECT_DIR$/hero-lol/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/html/personal.html" afterPath="$PROJECT_DIR$/hero-lol/html/personal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hero-lol/js/login_register.js" afterPath="$PROJECT_DIR$/hero-lol/js/login_register.js" />
@@ -31,9 +25,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hero-lol/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="55" column="56" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="599">
+              <caret line="167" column="39" lean-forward="true" selection-start-line="167" selection-start-column="39" selection-end-line="167" selection-end-column="39" />
+              <folding>
+                <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +37,8 @@
       <file leaf-file-name="personal.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hero-lol/html/personal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="110" column="39" lean-forward="false" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="39" />
+            <state relative-caret-position="533">
+              <caret line="323" column="32" lean-forward="true" selection-start-line="323" selection-start-column="32" selection-end-line="323" selection-end-column="32" />
               <folding>
                 <element signature="n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#ul#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -66,7 +62,7 @@
       <file leaf-file-name="personal.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hero-lol/css/personal.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="-400">
               <caret line="151" column="15" lean-forward="true" selection-start-line="151" selection-start-column="15" selection-end-line="151" selection-end-column="15" />
               <folding />
             </state>
@@ -76,8 +72,18 @@
       <file leaf-file-name="login_register.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hero-lol/js/login_register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="136" column="8" lean-forward="false" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="8" />
+            <state relative-caret-position="740">
+              <caret line="137" column="31" lean-forward="true" selection-start-line="134" selection-start-column="3" selection-end-line="137" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hero-lol/html/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -112,10 +118,10 @@
         <option value="$PROJECT_DIR$/hero-lol/css/login.css" />
         <option value="$PROJECT_DIR$/hero-lol/css/newest.css" />
         <option value="$PROJECT_DIR$/hero-lol/css/perimeter.css" />
-        <option value="$PROJECT_DIR$/hero-lol/html/index.html" />
-        <option value="$PROJECT_DIR$/hero-lol/js/login_register.js" />
-        <option value="$PROJECT_DIR$/hero-lol/html/personal.html" />
         <option value="$PROJECT_DIR$/hero-lol/css/personal.css" />
+        <option value="$PROJECT_DIR$/hero-lol/js/login_register.js" />
+        <option value="$PROJECT_DIR$/hero-lol/html/index.html" />
+        <option value="$PROJECT_DIR$/hero-lol/html/personal.html" />
       </list>
     </option>
   </component>
@@ -126,10 +132,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1242" />
-    <option name="y" value="281" />
-    <option name="width" value="1456" />
-    <option name="height" value="1100" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -328,18 +334,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495075672492</updated>
-      <workItem from="1495075674898" duration="9054000" />
+      <workItem from="1495075674898" duration="11588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9054000" />
+    <option name="totallyTimeSpent" value="11588000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1242" y="281" width="1456" height="1100" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16643159" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12434141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -442,31 +448,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hero-lol/html/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hero-lol/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="55" column="56" lean-forward="false" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+        <state relative-caret-position="374">
+          <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hero-lol/js/login_register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="136" column="8" lean-forward="false" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="8" />
+        <state relative-caret-position="740">
+          <caret line="137" column="31" lean-forward="true" selection-start-line="134" selection-start-column="3" selection-end-line="137" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hero-lol/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="167" column="39" lean-forward="true" selection-start-line="167" selection-start-column="39" selection-end-line="167" selection-end-column="39" />
+          <folding>
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hero-lol/css/personal.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="-400">
           <caret line="151" column="15" lean-forward="true" selection-start-line="151" selection-start-column="15" selection-end-line="151" selection-end-column="15" />
           <folding />
         </state>
@@ -474,8 +482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hero-lol/html/personal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="110" column="39" lean-forward="false" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="39" />
+        <state relative-caret-position="533">
+          <caret line="323" column="32" lean-forward="true" selection-start-line="323" selection-start-column="32" selection-end-line="323" selection-end-column="32" />
           <folding>
             <element signature="n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />

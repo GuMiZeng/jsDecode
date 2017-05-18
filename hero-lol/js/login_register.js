@@ -120,7 +120,7 @@ function insertData() {
 
 function loginSuccess(data) {
 
-    window.location.href="index.html";
+    window.location.href="index.html"+"?"+"userName="+data.userName;
     // _status = !_status;
     // if(_status){
     //     $('html body').addClass('no_scroll');
@@ -135,4 +135,5 @@ function loginSuccess(data) {
     $('.login-div').hide();
     $('.login-success').show();
     $('.userName').text(data.userName);
+    console.log(data.userName);
 }

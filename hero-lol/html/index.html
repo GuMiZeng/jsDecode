@@ -46,14 +46,14 @@
                         <span style="color: #87c38f;">周边</span>
                     </div>
                 </a>
-                <a href="login.html" target="_top">
-                    <div class="detailItem login-div">
+                <a class="login-div" href="login.html" target="_top">
+                    <div class="detailItem ">
                         <img src="../img/geren.png"/>
                         <span style="color: #7dc5eb;">个人</span>
                     </div>
                 </a>
-                <a href="personal.html" target="_top">
-                    <div class="detailItem login-success">
+                <a class="login-success"  target="_top">
+                    <div class="detailItem">
                         <img src="../img/geren.png"/>
                         <span style="color: #7dc5eb;">个人</span>
                     </div>
@@ -142,5 +142,36 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.mobile-1.4.5.min.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/login_register.js"></script>
+<script>
+    $(document).ready(function () {
+
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+
+        var text = GetRequest();
+        console.log(text);
+        if(text.userName){
+            $('.login-div').hide();
+            $('.login-success').show();
+            $('.userName').text(text.userName);
+            console.log(text.userName);
+        }
+        $('.login-success').click(function () {
+            window.location.href = "personal.html"+"?"+"userName="+text.userName;
+        });
+
+    });
+</script>
 </body>
 </html>
