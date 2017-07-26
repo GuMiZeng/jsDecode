@@ -1,0 +1,26 @@
+body{
+    font-size: 12px;
+    background-color: #f2f2f2;
+}
+.navTop{
+    background-color: white;
+}
+.content a{
+    color: black;
+}
+.content .container-fluid{
+    margin-bottom: 20px;
+    background-color: white;
+}
+.content .container-fluid .col-xs-3,.content .container-fluid .col-xs-9,.content .container-fluid .col-xs-4,.content .container-fluid .col-xs-8,.content .container-fluid .col-xs-12{
+    height: auto;
+    line-height: 34px;
+    padding:3px 10px 6px 15px;
+}
+.content hr{
+    margin: 0;
+    width: 100%;
+}
+.content input{
+    margin: 10px 0;
+}

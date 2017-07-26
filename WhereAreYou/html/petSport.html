@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>宠物运动</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/petDetails.css">
+</head>
+<body>
+<!--背景-->
+<div class="petBg"></div>
+<!--头部信息-->
+<div class="petDetailTop">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-xs-6 text-left">
+                <a href="homePage.html"><span>&times;</span></a>
+            </div>
+            <div class="col-xs-6 text-right">
+                <a href="editPet.html"><span class="glyphicon glyphicon-pencil"></span></a>
+            </div>
+            <div class="col-xs-12 text-center">
+               <div class="headPortrait"></div><br/>
+                <div style="min-width: 64px">
+                    &nbsp;&nbsp;妞妞
+                    <a class="positionColor" href="petRealtimeLocation.html">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center option">
+        <div class="row">
+            <div class="col-xs-4 ">
+                <a  href="petDetails.html">信息</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="petPic.html">照片</a>
+            </div>
+            <div class="col-xs-4 activeBorder">
+                <a href="petSport.html">运动量</a>
+            </div>
+        </div>
+</div>
+</div>
+<!--运动内容-->
+<div class="container-fluid sportContent">
+    <div class="row">
+        <div class="col-xs-9">
+            <h1>  261545 <small>步</small></h1>
+        </div>
+        <div class="col-xs-3">
+            <br/>
+            <img class="img-responsive" src="../img/dog.gif"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">
+            <div>距离</div>
+            <small>1.9公里</small>
+        </div>
+        <div class="col-xs-3">
+            <div>时长</div>
+            <small>0 小时</small>
+        </div>
+        <div class="col-xs-3">
+            <div>热量</div>
+            <small>1235 千卡</small>
+        </div>
+    </div>
+</div>
+<!--运动表格-->
+<div class="container-fluid sportChart">
+    <div class="row">
+        <canvas id="canvas" class="col-md-12"></canvas>
+    </div>
+</div>
+</body>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/Chart.js"></script>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/chartScript.js"></script>
+
+</html>

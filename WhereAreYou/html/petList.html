@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>宠物列表</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/common-zlj.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/petList.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-xs-12 navTop">
+            <nav class="nav navbar-inverse navbar-fixed-top">
+                <div class="col-xs-6">
+                    我的宠物
+                </div>
+                <div class="col-xs-6 text-right">
+                    <a href="addPet.html"><span class="glyphicon glyphicon-plus"></span></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid petList">
+        <div class="row">
+            <div class="col-xs-2">
+                <img class="img-responsive" src="../img/pettitle.jpg"/>
+            </div>
+            <a href="petDetails.html">
+                <div class="col-xs-6 text-center">
+                    <span>妞妞</span>
+                    <span>2岁半</span>
+                    <span>女宝宝</span>
+                </div>
+            </a>
+            <div class="col-xs-4">
+                <button type="button" class="btn btn-success form-control dropdown-toggle collapsed" data-toggle="collapse"  href="#collapse1">操作
+                </button>
+
+            </div>
+            <div id="collapse1" class=" col-xs-12 collapse " style="height: 0;">
+                <a role="button" class="btn btn-default" data-toggle="modal" data-target="#modal1">删除</a>
+                <a role="button" href="unbound.html" class="btn btn-default">解绑</a>
+                <a role="button" href="bound.html" class="btn btn-default">绑定</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid petList">
+        <div class="row">
+            <div class="col-xs-2">
+                <img class="img-responsive" src="../img/pettitle.jpg"/>
+            </div>
+            <a href="petDetails.html">
+                <div class="col-xs-6 text-center">
+                    <span>妞妞</span>
+                    <span>2岁半</span>
+                    <span>女宝宝</span>
+                </div>
+            </a>
+            <div class="col-xs-4">
+                <button type="button" class="btn btn-success form-control dropdown-toggle collapsed" data-toggle="collapse"  href="#collapse2">操作
+                </button>
+
+            </div>
+            <div id="collapse2" class=" col-xs-12 collapse" style="height: 0;">
+                <a role="button" class="btn btn-default" data-toggle="modal" data-target="#modal1">删除</a>
+                <a role="button" href="unbound.html" class="btn btn-default">解绑</a>
+                <a role="button" href="bound.html" class="btn btn-default">绑定</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid petList">
+        <div class="row">
+            <div class="col-xs-2">
+                <img class="img-responsive" src="../img/pettitle.jpg"/>
+            </div>
+            <a href="petDetails.html">
+                <div class="col-xs-6 text-center">
+                    <span>妞妞</span>
+                    <span>2岁半</span>
+                    <span>女宝宝</span>
+                </div>
+            </a>
+            <div class="col-xs-4">
+                <button type="button" class="btn btn-success form-control dropdown-toggle collapsed" data-toggle="collapse"  href="#collapse3">操作
+                </button>
+
+            </div>
+            <div id="collapse3" class=" col-xs-12 collapse" style="height: 0;">
+                <a role="button" class="btn btn-default" data-toggle="modal" data-target="#modal1">删除</a>
+                <a role="button" href="unbound.html" class="btn btn-default">解绑</a>
+                <a role="button" href="bound.html" class="btn btn-default">绑定</a>
+            </div>
+        </div>
+    </div>
+    <!-- Modal1 删除 -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel1">要离开小宝贝了么</h4>
+                </div>
+                <div class="modal-body">
+                    是否要删除 妞妞 ？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">确认</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+</html>

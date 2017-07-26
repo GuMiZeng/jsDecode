@@ -1,0 +1,213 @@
+.bgImg{
+    position: absolute;
+    z-index: -1;
+    left: -374px;
+}
+.ad{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: #37c161;
+    margin: 0 auto;
+}
+
+.topTitle{
+    margin: 0 auto;
+    width: 1190px;
+    height: 500px;
+    background-color: #f2f2f2;
+}
+
+.titleLeft{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+}
+
+.logo{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+}
+
+.allTop{
+    height: 170px;
+    font-size: 15px;
+    background-color: #f2f2f2;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.centerTop{
+    position: relative;
+    width: 1000px;
+    height: 30px;
+    font-size: 13px;
+    color: gainsboro;
+    background-color: #e3e4e5;
+}
+.centerTop a{
+    color: #898989;
+}
+
+.centerTop a:hover{
+    color: #e01222;
+}
+
+.centerTop ul{
+    height: 32px;
+    /*overflow: hidden;*/
+}
+.centerTop li{
+    float: left;
+    margin: 3px;
+    border: transparent 1px solid;
+}
+
+.myList{
+    position: absolute;
+    top: 24px;
+    z-index: 2;
+    border: 1px solid #B5B5B5;
+    display: none;
+    font-size: 12px;
+    background-color: white;
+}
+
+.myTitle{
+    border: 1px solid transparent;
+    margin-top: -1px;
+}
+
+.myList a{
+    margin-left: 10px;
+}
+
+.myTitleHover{
+    background-color: white;
+    border: 1px solid #B5B5B5;
+    border-bottom-color: transparent;
+    position: relative;
+    z-index: 10;
+}
+
+.serviceTitle{
+    margin-top: -1px;
+    border: 1px solid transparent;
+}
+
+.serviceList{
+    position: absolute;
+    top: 24px;
+    z-index: 2;
+    border: 1px solid #B5B5B5;
+    display: none;
+    font-size: 12px;
+    background-color: white;
+}
+
+.serviceList h3{
+    margin-left: 8px;
+}
+
+.serviceList li{
+    margin: 0px 5px;
+    width: 130px;
+    height: 16px;
+}
+
+.serviceList a{
+    margin-left: 10px;
+}
+
+.service:hover .serviceList{
+    display: block;
+}
+
+.serviceTitleHover{
+    background-color: white;
+    border: 1px solid #B5B5B5;
+    border-bottom-color: transparent;
+    position: relative;
+    z-index: 6;
+}
+
+.titleCenter{
+    width: 790px;
+    margin: 0 5px ;
+}
+
+.search{
+    width: 562px;
+    margin: 30px 0 0 130px;
+    height: 36px;
+    position: relative;
+}
+
+.search a{
+    color: #898989;
+}
+
+.search a:hover{
+    color: #e01222;
+}
+
+.searchInput{
+    padding: 5px;
+    width: 500px;
+    height: 22px;
+    border: 1px solid #e01222;
+    outline: none;
+}
+
+.searchBtn{
+    position: absolute;
+    top: -1px;
+    right: 2px;
+    width: 50px;
+    height: 35px;
+    background: url("../img/search.jpg")no-repeat;
+}
+
+.searchBtm ul{
+    height: 28px;
+    overflow: hidden;
+}
+
+.searchBtm li{
+    float: left;
+    font-size: 13px;
+    margin-right: 12px;
+}
+
+.centerTopFoot{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.centerTopFoot a{
+    font-size: 16px;
+    color: #666666;
+}
+
+.centerTopFoot a:hover{
+    color: #e01222;
+}
+
+.centerTopFoot ul{
+    height: 32px;
+    overflow: hidden;
+}
+
+.centerTopFoot li{
+    float: left;
+    margin-right: 35px;
+    font-weight: 700;
+}
+
+.qrCode{
+    margin-top: -70px;
+}

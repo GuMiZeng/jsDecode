@@ -1,0 +1,198 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.css">
+
+	<title>地图</title>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=46ce9d0614bf7aefe0ba562f8cf87194&v=1.0&services=true">
+</script>
+<style type="text/css">
+	body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+	.top{
+		padding: 5px 0;
+		background-color:#AEDCAE ;
+	}
+	.title-l{
+		color: #fff;background-color: #5CB85C;
+		border-radius: 5px;float: left;
+	}
+	.title-r{
+		/*margin-left: 163px;*/
+		
+		background-color:#AEDCAE ;
+	}
+	.input{
+		background-color: #5CB85C;
+		color: #fff;
+		border: 1px dashed #ccc;
+	}
+	.col-xs-12{background-color:#AEDCAE ;padding: 0;}
+	</style>
+</head>
+<body>
+	<div class="col-xs-12">
+		<div class="top">
+			<div class="title-l " >宠物足迹</div>
+			<div class="title-r pull-right" >
+				<span>测距：</span>
+				<input class="input"  type="button" value="开启" onclick="myDis.open()" />
+				<input class="input"  type="button" value="关闭" onclick="myDis.close()" />
+			</div>
+			
+		</div>
+		<div style="width:100%;height:90%;border:1px solid gray" id="container"></div>		
+	</div>
+	
+</body>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+<script src="../lib/bootstrap-3.3.0-dist/dist/js/bootstrap.js"></script>
+
+</html>
+<!--加载鼠标绘制工具-->
+	<script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css" />
+	<!--加载检索信息窗口-->
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.js"></script>
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.4/src/SearchInfoWindow_min.css" />
+<script type="text/javascript">
+//
+//var map = new BMap.Map("container");            // 创建Map实例
+//var point = new BMap.Point(116.404, 39.915);    // 创建点坐标
+//map.centerAndZoom(point,15);                     // 初始化地图,设置中心点坐标和地图级别。
+//map.enableScrollWheelZoom();                  // 启用滚轮放大缩小。
+//map.enableKeyboard();                         // 启用键盘操作。
+
+
+//var map = new BMap.Map("container", {mapType:BMAP_PERSPECTIVE_MAP});
+//var point = new BMap.Point(116.404,39.915);map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+//map.centerAndZoom(point,15);
+//map.enableScrollWheelZoom(true);
+
+
+
+var map = new BMap.Map("container");                        // 创建Map实例
+map.centerAndZoom(new BMap.Point(104.082146, 30.546424), 20);     // 初始化地图,设置中心点坐标和地图级别
+map.enableScrollWheelZoom();                  // 启用滚轮放大缩小。
+map.enableKeyboard();                         // 启用键盘操作。
+
+var opts = {anchor: BMAP_ANCHOR_BOTTOM_RIGHT ,type: BMAP_NAVIGATION_CONTROL_SMALL}  //控件位置右下，外观
+map.addControl(new BMap.NavigationControl(opts));            //添加一个平移缩放控件
+map.addControl(new BMap.ScaleControl());                    //一个比例尺控件
+map.addControl(new BMap.OverviewMapControl());                //添加缩略地图控件
+
+var myPushpin = new BMap.PushpinTool(map);          // 创建标注工具实例
+var myDis = new BMap.DistanceTool(map);
+
+//myPushpin.addEventListener("markend", function(e){  // 监听事件，提示标注点坐标信息
+//alert("您标注的位置：" + 
+//      e.marker.getPoint().lng + ", " + 
+//      e.marker.getPoint().lat);
+//});
+//myPushpin.open();
+
+
+// 编写自定义函数,创建标注
+function addMarker(point, index){
+	var myIcon = new BMap.Icon( "http://api.map.baidu.com/img/markers.png",new BMap.Size(23, 25),
+  		{    imageOffset: new BMap.Size(0, 0 - index * 25)  });
+ 	var marker = new BMap.Marker(point, {icon: myIcon});
+  	map.addOverlay(marker);
+  	marker.enableDragging(true);    // 设置标注可拖拽
+}
+
+// 随机向地图添加6个标注
+	var bounds = map.getBounds();
+	var lngSpan = bounds.maxX - bounds.minX;
+	var latSpan = bounds.maxY - bounds.minY;
+	for (var i = 0; i < 6; i++) {
+		var point = new BMap.Point(bounds.minX + lngSpan * Math.random() * 0.7, bounds.minY + latSpan * Math.random() * 0.7);
+		addMarker(point, i);
+	
+		var polyline = new BMap.Polyline([
+			new BMap.Point(104.082146, 30.546424),
+			new BMap.Point(104.081329, 30.54705),
+			new BMap.Point(104.080583, 30.546988),
+			new BMap.Point(104.081135, 30.546614),
+//			new BMap.Point(104.081126, 30.543745),
+			new BMap.Point(104.082052, 30.543932),
+			new BMap.Point(104.081549, 30.547338),
+			new BMap.Point(104.082146, 30.546424)
+		], {
+			strokeColor: "#5CB85C",
+			strokeWeight: 6,
+			strokeOpacity: 0.5
+		});
+		map.addOverlay(polyline);
+	}
+	
+	
+	
+	var pt = new BMap.Point(104.082052, 30.543932);
+//	var myIcon = new BMap.Icon("http://developer.baidu.com/map/jsdemo/img/fox.gif", new BMap.Size(300,157));
+	var myIcon = new BMap.Icon("../img/dlo.png", new BMap.Size(50,100));
+	var marker2 = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+	map.addOverlay(marker2);
+	
+	var pt = new BMap.Point(104.082146, 30.546424);
+	var myIcon = new BMap.Icon("../img/plo.png", new BMap.Size(50,100));
+	var marker2 = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+	map.addOverlay(marker2); 
+
+	
+	var menu = new BMap.ContextMenu();
+	var txtMenuItem = [
+        {
+            text:'放大',
+            callback:function(){map.zoomIn()}
+        },
+        {
+            text:'缩小',
+            callback:function(){map.zoomOut()}
+        },
+        {
+            text:'放置到最大级',
+            callback:function(){map.zoomTo(18)}
+        },
+        {
+            text:'查看全国',
+            callback:function(){map.zoomTo(4)}
+        },
+        {
+            text:'在此添加标注',
+            callback:function(p){
+                var mark = new BMap.Marker(p), px = map.pointToPixel(p);
+                map.addOverlay(mark);
+            }
+        }
+    ];
+
+
+    for(var i=0; i < txtMenuItem.length; i++){
+        menu.addItem(new BMap.MenuItem(txtMenuItem[i].text,txtMenuItem[i].callback,100));
+        if(i==1 || i==3) {
+            menu.addSeparator();
+        }
+    }
+	map.addContextMenu(menu);
+	
+
+
+
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</script>

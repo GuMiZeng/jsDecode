@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../public/js/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/stock.css">
+</head>
+<body>
+<div id="showMsg">
+    <input placeholder="输入正确七位数股票号" id="getNum" type="text">
+    <button class="btn btn-info btn-sm" id="sendBtn" >获取信息</button>
+    <button class="btn btn-info btn-sm" id="selectAllBtn">全选</button>
+    <p class="hintF">请输入正确的股票号码</p>
+    <p class="hintS">股票号不存在</p>
+    <br/><br/>
+    <table class="table table-bordered"   id="stockTbl">
+        <thead>
+            <tr>
+                <td>选中</td>
+                <td>股票名称</td>
+                <td>最高价</td>
+                <td>最低价</td>
+                <td>昨日收盘价</td>
+                <td>秒数刷新</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot></tfoot>
+    </table>
+    <button class="btn btn-info btn-sm" id="deleteChooseBtn">删除选中项</button>
+    <button class="btn btn-info btn-sm" id="sortBtn">排序</button>
+</div>
+</body>
+<script src="../js/stock.js"></script>
+</html>

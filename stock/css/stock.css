@@ -1,0 +1,19 @@
+div {
+    width:80%;
+    margin:100px auto;
+    padding: 50px;
+    border: solid 1px #cccccc;
+    border-radius: 1%;
+    position: relative;
+}
+.hintF,.hintS{
+    color: red;
+    height: 14px;
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    top: 78px;;
+}
+table tr:hover{
+    background-color: #faebcc;
+}

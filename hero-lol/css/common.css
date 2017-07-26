@@ -1,0 +1,15 @@
+.footer{
+    width: 100%;
+    height: 2rem;
+    background-color:#f2f2f2;
+    clear: both;
+    font-size: 0.2rem;
+    color: #c1c1c1;
+    padding-top: 0.2rem;
+}
+.footer p{
+    margin:0.1rem 0.2rem;
+}
+.ui-loader-default{ display:none}
+.ui-mobile-viewport{ border:none;}
+.ui-page {padding: 0; margin: 0; outline: 0}

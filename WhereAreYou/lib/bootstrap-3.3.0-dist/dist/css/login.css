@@ -1,0 +1,70 @@
+.bg{
+	width: 100%;
+	height: 100%;
+	background: url("../../../../img/1.jpeg")no-repeat top center;
+	background-size: cover;
+	position: absolute;
+	top:0;
+	z-index: -1;
+	-webkit-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(10px);
+}
+.login{
+	text-align: center;
+	width: 100%;
+	height: auto;	
+	margin: 0 auto;
+
+}
+.login .form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 30px;
+}
+.bglogin{
+	width:100%;
+	height:auto;
+	padding: 30px 0px 80px 0;
+	border-radius: 10px;	
+}
+.bglogin .modal-dialog{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 0px;
+}
+.bglogin .modal-dialog .modal-content{
+	border: none;
+	border-radius: 0;
+}
+.bglogin .modal-dialog .modal-body
+,.bglogin .modal-dialog .modal-footer{
+	padding: 0;
+}.bglogin .modal-dialog .modal-body .btn
+,.bglogin .modal-dialog .modal-footer .btn{
+	width: 100%;
+	line-height: 25px;
+ }
+label.col-xs-2.control-label {
+    padding: 0;
+    text-align: right;
+    line-height: 40px;
+}
+.col-md-6{
+	margin: 0 10px;
+    border-radius: 20px;
+}
+ .img{
+	 margin-top: 40px;
+	display:inline-block;
+	position:relative;
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	border-radius:50%;
+}
+ .img img{
+	width:auto;
+	height:100%;
+}

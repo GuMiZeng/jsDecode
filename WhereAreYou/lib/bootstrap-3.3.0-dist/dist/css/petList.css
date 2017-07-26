@@ -1,0 +1,34 @@
+body{
+    padding-top: 30px;
+    background-color: #f2f2f2;
+}
+.navTop .col-xs-6 a{
+    color: white;
+}
+.petList{
+    margin: 10px 0 20px 0;
+    background-color: white;
+}
+.petList a{
+    color: #666;
+}
+.petList .btn-default{
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    border-radius: 0;
+    width: 100%;
+}
+.petList .col-xs-12{
+    padding: 0;
+}
+.petList .col-xs-2,.petList .col-xs-6,.petList .col-xs-4{
+    padding: 5px 5px;
+    margin: 0;
+}
+.petList .col-xs-4,.petList .col-xs-6{
+    padding-top: 8%;
+}
+
+.petList .col-xs-4 .dropdown-menu{
+    min-width: 0;
+}

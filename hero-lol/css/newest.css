@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 0.3rem;
+    background-color: #f1f1f1;
+    color: #2a2a2a;
+}
+.hide{
+    display: none;
+}
+.top-logo{
+    background-color: white;
+}
+.personal-path{
+    padding-left: 0.2rem;
+    color: #1f1f1f;
+    margin: 0.2rem 0;
+}
+.new-list{
+    clear: both;
+    height: 0.6rem;
+    padding-top: 0.1rem;
+    position: relative;
+    overflow: hidden;
+}
+.new-list ul li{
+    float: left;
+    width: 25%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-top: 0.08rem #fafafa solid;
+    text-align: center;
+    background-color: #ededed;
+}
+.active-border{
+    top:0.1rem;
+    left: 0;
+    position: absolute;
+    width: 25%;
+    height: 0.1rem;
+    background-color: #b59758;
+}
+.active{
+    color: #b59758;
+    font-weight: 700;
+    background-color: white !important;
+}
+.new-title{
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    overflow : hidden;
+}
+.new-content{
+    padding: 0.2rem 0.1rem;
+    background-color: white;
+}
+.new-content ul li{
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 0.01rem solid #ccc;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    overflow : hidden;
+}
+.new-content ul li a{
+    display: inline-block;
+    height: 0.4rem;
+    line-height: 0.36rem;
+    width: 0.8rem;
+    background-color: #e0e0e0;
+    border-radius: 0.1rem;
+    text-align: center;
+    color: #9e9e9e;
+    margin-right: 0.2rem;
+}

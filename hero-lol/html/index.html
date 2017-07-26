@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <div class="nav">
+            <a href="login.html" target="_top"><div class="logo"></div></a>
+            <div class="search">
+                <input type="text" name="search" placeholder="搜索你喜欢的">
+                <img src="../img/search.png"/>
+            </div>
+        </div>
+        <div class="theme" id="pics">
+            <a href="#"><img src="../img/perimeter/flash95.jpg"/></a>
+            <a href="#"><img src="../img/pic-big-v1.jpg"/></a>
+            <a href="#"><img src="../img/perimeter/flash92.jpg"/></a>
+        </div>
+    </div>
+
+    <div data-role="main">
+        <div class="detail">
+            <div class="detail-bd">
+                <a href="newest.html" target="_top">
+                    <div class="detailItem">
+                        <img src="../img/new.png"/>
+                        <span style="color: #ea986c;">最新</span>
+                    </div>
+                </a>
+                <a href="activity.html" target="_top">
+                    <div class="detailItem">
+                        <img src="../img/activity.png"/>
+                        <span style="color: #dea76d;">活动</span>
+                    </div>
+                </a>
+                <a href="perimeter.html" target="_top">
+                    <div class="detailItem">
+                        <img src="../img/zhoubian.png"/>
+                        <span style="color: #87c38f;">周边</span>
+                    </div>
+                </a>
+                <a class="login-div" href="login.html" target="_top">
+                    <div class="detailItem ">
+                        <img src="../img/geren.png"/>
+                        <span style="color: #7dc5eb;">个人</span>
+                    </div>
+                </a>
+                <a class="login-success"  target="_top">
+                    <div class="detailItem">
+                        <img src="../img/geren.png"/>
+                        <span style="color: #7dc5eb;">个人</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="recommend">
+            <div>
+                <h6>活动推荐</h6>
+                <hr/>
+                <div class="recommendItem">
+                    <img src="../img/004.jpg"/>
+                    <div class="content">
+                        <strong>春季·排位赛挑战回馈</strong><br/>
+                        <small class="orange">活动时间：</small><small>2017-03-15-2017-04-13</small>
+                    </div>
+                    <hr/>
+                </div>
+                <div>
+                    <img src="../img/003.jpg"/>
+                    <div class="content">
+                        <strong>神拳 李青任务</strong><br/>
+                        <small class="orange">活动时间：</small><small>2017-04-11-2017-04-30</small>
+                    </div>
+                    <hr/>
+                </div>
+                <div>
+                    <img src="../img/002.jpg"/>
+                    <div class="content">
+                        <strong>春季·训练营</strong><br/>
+                        <small class="orange">活动时间：</small><small>2017-03-08-2017-04-04</small>
+                    </div>
+                    <hr/>
+                </div>
+                <div>
+                    <img src="../img/001.jpg"/>
+                    <div class="content">
+                        <strong>春季·峡谷相逢</strong><br/>
+                        <small class="orange">活动时间：</small><small>2017-03-21-2017-04-30</small>
+                    </div>
+                    <hr/>
+                </div>
+            </div>
+            <div class="videoRecommend">
+                <h6>视频推荐</h6>
+                <hr/>
+                <div class="videoItem">
+                    <img src="../img/005.jpg"/>
+                    <span>《招牌英雄》MLXG手把手教你玩盲僧</span>
+                </div>
+                <div class="videoItem">
+                    <img src="../img/006.jpg"/>
+                    瑞文的愤怒！谁来也是送人头，五杀美滋滋！
+                </div>
+                <div class="videoItem">
+                    <img src="../img/007.jpg"/>
+                    说了别惹我！印度神僧反杀三人
+                </div>
+                <div class="videoItem">
+                    <img src="../img/008.jpg"/>
+                    新模式死兆星，十个锤石可以玩一天
+                </div>
+                <div class="videoItem">
+                    <img src="../img/009.jpg"/>
+                    秀你一脸22期：一颗手雷 轻松团灭敌方
+                </div>
+                <div class="videoItem">
+                    <img src="../img/010.jpg"/>
+                    强者联盟;一口气看完所有连招！老司机的日常操作！
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="">
+        <div class="footer">
+            <p>腾讯公司版权所有</p>
+            <p>COPYRIGHT &copy; 1998 - 2017 TENCENT. ALL RIGHTS RESERVED.</p>
+            <p>&copy; 2012 Riot Games, Inc. ALL RIGHTS RESERVED.</p>
+            <p>文网进字[2011] 004号 & ISBN 978-7-89989-145-2|新出网证（粤）字010号|粤网文[2014]0633-233号</p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="../js/auto-size.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/login_register.js"></script>
+<script>
+    $(document).ready(function () {
+
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+
+        var text = GetRequest();
+        console.log(text);
+        if(text.userName){
+            $('.login-div').hide();
+            $('.login-success').show();
+            $('.userName').text(text.userName);
+            console.log(text.userName);
+        }
+        $('.login-success').click(function () {
+            window.location.href = "personal.html"+"?"+"userName="+text.userName;
+        });
+
+    });
+</script>
+</body>
+</html>

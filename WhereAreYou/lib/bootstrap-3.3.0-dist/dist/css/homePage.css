@@ -1,0 +1,60 @@
+body{
+    padding-top: 32px;
+    background-color: #f2f2f2;
+}
+
+.navTop nav,.navTop a{
+    height: 32px;
+    line-height: 32px;
+    color: white;
+}
+.center{
+    margin-top: 20px;
+}
+.center .col-xs-12 span{
+    border-radius: 4px;
+    padding: 2px 6px;
+    background-color: rgba(0,0,0,0.1);
+    color: #fff;
+}
+.center .col-xs-12{
+    margin-bottom: 20px;
+}
+.center .col-xs-2,.center .col-xs-10{
+    height: 23px;
+    line-height: 23px;
+}
+.navTop .media-body{
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff;
+}
+.navTop .media-left{
+    padding: 5px;
+}
+.homeNav .nav{
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+}
+.homeNav .btn{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: #f8f8f8;
+}
+.homeNav .row{
+    background-color: #f8f8f8;
+}
+.homeNav .col-xs-2{
+    height: 32px;
+    line-height: 32px;
+}
+.upMenu .col-xs-4 .dropdown-menu{
+    min-width: 0;
+}
+.homeNav .col-xs-2,.homeNav .col-xs-10,.homeNav .col-xs-4{
+    padding: 0;
+}
