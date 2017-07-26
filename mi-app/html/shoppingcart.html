@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shoppingcart</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!--搜索-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_sz1xudpm7j7wg66r.css">
+    <!--底部-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2xxmu9tjf6flxr.css">
+    <link rel="stylesheet" href="../css/main-common.css">
+    <link rel="stylesheet" href="../css/shoppingcart.css">
+
+<body>
+<div class="wrapper" id="product">
+    <div class="cart-index">
+        <div class="header">
+            <div class="left">
+                <a href="#"><img src="../img/classify/icon_back_n.png" alt=""></a>
+            </div>
+            <div class="tit">
+                <h2><span>购物车</span></h2>
+            </div>
+            <div class="right">
+                <a href="#">
+                    <div class="iconfont icon-sousuo"></div>
+                </a>
+            </div>
+        </div>
+        <div class="cart-index-wrap">
+            <!--去登录-->
+            <div>
+                <div class="nologin">
+                    <a href="login.html">
+                        <span>登录后享受更多优惠</span>
+                        <small>去登录</small>
+                    </a>
+                </div>
+            </div>
+            <!--去登录结束-->
+            <!--逛逛开始-->
+            <div>
+                <div class="noitems grey" v-show="deleteProduct">
+                    <a href="index.html">
+                        <span>购物车还是空的</span>
+                        <small>去逛逛</small>
+                    </a>
+                </div>
+            </div>
+            <!--逛逛结束-->
+            <!--推荐列表开始-->
+            <div v-show="deleteProduct" class="list-recommend">
+                <div>
+                    <div class="recommend-title">为你推荐</div>
+                    <div class="recommend-list">
+                        <ul>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend01.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name"> 12.5" 笔记本 256GB</div>
+                                        <div class="recommend-price">3999</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend02.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">13.3" 笔记本 标准版</div>
+                                        <div class="recommend-price">4999</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend03.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">13.3" 笔记本 尊享版</div>
+                                        <div class="recommend-price">5999</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend04.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米金属鼠标垫</div>
+                                        <div class="recommend-price">49</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend05.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">头戴式耳机 轻松版</div>
+                                        <div class="recommend-price">199</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend06.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米无线鼠标</div>
+                                        <div class="recommend-price">69</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend07.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">睿米一分二点烟器</div>
+                                        <div class="recommend-price">79</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend08.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">悦米机械键盘</div>
+                                        <div class="recommend-price">3999</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend09.jpg">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米VR眼镜 PLAY2</div>
+                                        <div class="recommend-price">299</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend10.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">乳胶床垫·青春版</div>
+                                        <div class="recommend-price">99</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend11.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米电视4A 65" 语音版</div>
+                                        <div class="recommend-price">899</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend12.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小蚁微单相机M1</div>
+                                        <div class="recommend-price">2999</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend13.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米电视4A 55英寸</div>
+                                        <div class="recommend-price">3199</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend14.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米电视4A 55" 语音版</div>
+                                        <div class="recommend-price">3599</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend15.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米圈铁耳机</div>
+                                        <div class="recommend-price">95</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend16.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米电视3s 55英寸</div>
+                                        <div class="recommend-price">3999</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend18.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米Note 2 128GB版</div>
+                                        <div class="recommend-price">3999</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend19.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">米家行车记录仪</div>
+                                        <div class="recommend-price">349</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend20.jpg">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">小米商旅双肩包</div>
+                                        <div class="recommend-price">3999</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="J_linksign-customize">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../img/shopping/recommend01.webp">
+                                    </div>
+                                    <div class="recommend-info">
+                                        <div class="recommend-name">笔记本</div>
+                                        <div class="recommend-price">3999</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--推荐列表结束-->
+            <!--购物车产品开始-->
+            <div class="product" v-show="!deleteProduct">
+                <div class="cart-list">
+                    <ul>
+                        <!--购物商品开始-->
+                        <li class="item" v-for="(products, index) in product">
+                            <div class="ui-box">
+                                <div class="choose status-1" v-show="products.choose" @click="choose(index)"></div>
+                                <div class="choose status-0" v-show="!products.choose"  @click="choose(index)"></div>
+                                <div class="imgProduct">
+                                    <a href="#">
+                                        <img :src="products.img_src">
+                                    </a>
+                                </div>
+                                <div class="info ui-box-flex">
+                                    <div class="name">
+                                        <p>
+                                            <span>{{products.name}}</span>
+                                        </p>
+                                    </div>
+                                    <div class="price">
+                                        <p>
+                                            <span>售价：</span>
+                                            <span>{{products.price}}元</span>
+                                            <span>合计：</span>
+                                            <span>{{products.single_total}}元</span>
+                                        </p>
+                                    </div>
+                                    <div class="num">
+                                        <div class="xm-input-number">
+                                            <div class="input-sub" @click="sub(index)"></div>
+                                            <div class="input-num">
+                                                <span>{{products.num}}</span>
+                                            </div>
+                                            <div class="input-add active" @click="input_add(index)"></div>
+                                        </div>
+                                        <div class="delete" v-show="!deleteProduct" @click="del_product(index)">
+                                            <a href="#">
+                                                <span class="iconfont icon-shanchu"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--购物商品结束-->
+                    </ul>
+                </div>
+                <div class="pointBox">
+                    <div class="point">
+                        <p>温馨提示：产品是否购买成功，以最终下单为准，请尽快结算</p>
+                    </div>
+                    <div class="ui_line"></div>
+                </div>
+                <div class="bargain" >
+                    <div v-for="(products,index) in product"  class="list J_linksign-customize">
+                        <div v-show="products.choose">
+                            <div class="item">
+                                <i class="check">
+                                    <span class="iconfont icon-choose"></span>
+                                </i>
+                                <span>{{products.item_name[0]}}</span>
+                                <i class="more"></i>
+                            </div>
+                            <div class="item">
+                                <i class="check">
+                                    <span class=" iconfont icon-choose"></span>
+                                </i>
+                                <span>{{products.item_name[1]}}</span>
+                                <i class="more"></i></div>
+                            <div class="item">
+                                <i class="check">
+                                    <span class=" iconfont icon-choose"></span>
+                                </i>
+                                <span>{{products.item_name[2]}}</span>
+                                <i class="more"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-submit ui-box" v-show="!deleteProduct">
+                    <div class="price">
+                        <span>共{{total_num}}件 金额：</span>
+                        <br>
+                        <strong>{{total_price}}</strong>
+                        <span>元</span>
+                    </div>
+                    <div class="btn">
+                        <a class="ui-button ui-button-disable" href="classify.html">
+                            <span>继续购物</span>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <a class="ui-button">
+                            <span>去结算</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--购物车产品结束-->
+        </div>
+        <div class="footer" v-show="deleteProduct">
+            <ul>
+                <li><a href="index.html">
+                    <div class="nav">
+                        <i class="iconfont icon-1"></i>
+                        <span>首页</span>
+                    </div>
+                </a></li>
+                <li><a href="classify.html">
+                    <div class="nav">
+                        <i class="iconfont icon-xwmfenlei"></i>
+                        <span>分类</span>
+                    </div>
+                </a></li>
+                <li><a href="shoppingcart.html">
+                    <div class="nav active">
+                        <i class="iconfont icon-cart"></i>
+                        <span>购物车</span>
+                    </div>
+                </a></li>
+                <li><a href="my.html">
+                    <div class="nav">
+                        <i class="iconfont icon-my"></i>
+                        <span>我的</span>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/auto-size.js"></script>
+<script src="../js/vue.js"></script>
+<script src="../js/shoppingcart.js"></script>
+</head>
+</body>
+</html>

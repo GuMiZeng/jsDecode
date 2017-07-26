@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/angular-1.6.4.min.js"></script>
+</head>
+<body>
+
+<div class="register">
+    <div class="register-content">
+        <div class="register-logo">
+            <a href="index.html"><img src="../img/mi-logo.png"/></a>
+        </div>
+        <div class="register-title"><span> 注册小米账号</span></div>
+        <div class="register-form">
+            <form ng-app="myRegister" ng-submit="submit(myRegisterForm.$valid)" name="myRegisterForm" ng-controller="registerFormCtrl" novalidate>
+
+                <input type="text" placeholder="中国（+86）" name="address" ng-model="address" required ng-pattern="/^[\u4e00-\u9fa5]{2,5}$/"/>
+                <span style="color: red ;float: left" ng-show="myRegisterForm.address.$dirty && myRegisterForm.address.$invalid">
+                    <span ng-show="myRegisterForm.address.$error.required">必填（地区）</span>
+                    <span ng-show="myRegisterForm.address.$error.pattern">输入地址名</span>
+                </span>
+
+                <input type="text" name="phone" placeholder="请输入手机号码" ng-model="phone" ng-pattern="/13[123569]{1}\d{8}|15[1235689]\d{8}|18\d{9}/" required/>
+                <span style="color: red ;float: left;display: inline-block" ng-show="myRegisterForm.phone.$dirty && myRegisterForm.phone.$invalid">
+                    <span ng-show="myRegisterForm.phone.$error.required">必填（手机号码）</span>
+                    <span ng-show="myRegisterForm.phone.$error.pattern">输入正确手机号码</span>
+                </span>
+
+                <div style="height: 87px">
+                    <input type="text" name="verify" placeholder="输入图片验证码" ng-model="verify" required/><div class="verify-img"><img src="../img/getCode.png"/></div>
+                </div>
+                <span style="color: red;clear: both;display: inline-block;" ng-show="myRegisterForm.verify.$dirty && myRegisterForm.verify.$invalid">
+                    <span style="float: left" ng-show="myRegisterForm.verify.$error.required">必填（验证码）</span>
+                </span>
+
+                <input type="submit" value="立即注册" ng-disabled="myRegisterForm.$inValid">
+            </form>
+
+            <span>点击“立即注册”，即表示您同意并愿意遵守小米 <a href="javascript:void(0);">用户协议</a> 和 <a href="javascript:void(0);">隐私政策</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="footer" style="min-width: 852px">
+    <p>简体| 繁体| English| 常见问题</p>
+    <p>小米公司版权所有-京ICP备10046444-<img src="../img/ghs.png"/>京公网安备11010802020134号-京ICP证110507号</p>
+</div>
+
+<script>
+    var app = angular.module('myRegister', []);
+    app.controller('registerFormCtrl', function($scope) {
+        $scope.submit = function (isValid) {
+            if(isValid){
+                window.location.href='login.html';
+            }else {
+                return false;
+            }
+        }
+    });
+</script>
+</body>
+</html>

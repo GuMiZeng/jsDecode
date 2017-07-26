@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 1320px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.head-nav{
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    font-size: 12px;
+    overflow: visible;
+}
+.head-nav-Content{
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+.head-nav ul{
+    margin:0 100px 0 0;
+    padding: 0;
+    height: 30px;
+    list-style: none;
+
+}
+.head-nav ul li{
+    height: 30px;
+    float: left;
+    margin-right: 15px;
+}
+.head-nav ul li a{
+    text-decoration: none;
+    color: #cccccc;
+}
+.head-nav ul li a:hover{
+    color: white;
+}
+.head-nav .shop-cart{
+    position: absolute;
+    right: -25px;
+    margin-top: -5px;
+    width: 111px;
+    padding: 0 5px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #cccccc;
+    background-color: #666666;
+}
+.head-nav .shop-cart:hover{
+    background-color: white;
+    color: #ff7f1c;
+}
+.head-nav .shop-cart:hover a{
+    color: #ff7f1c;
+}
+.shop-cart-hint{
+    display: none;
+    width: 140px;
+    height: 60px;
+    padding-left: 10px;
+    color: #ff7f1c;
+    position: absolute;
+    right: -10px;
+    top: 40px;
+    border: 1px solid #cccccc;
+    border-top-color: transparent;
+    box-shadow: 8px 8px 10px #f2f2f2;
+    background-color: white;
+}
+
+.head{
+    width: 100%;
+    height: 100px;
+}
+
+.head-content{
+    margin: 20px auto;
+    width: 1226px;
+    height: 100px;
+    line-height: 100px;
+}
+.head-content div{
+    float: left;
+}
+.head-content ul{
+    width: 894px;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+}
+.head-content ul li{
+    height: 20px;
+    float: left;
+    margin: 0 8px;
+}
+.head-content ul li a{
+    color: #282828;
+    font-size: 18px;
+}
+.head-content ul li a:hover{
+    color: #ff7f1c;
+}
+.head-content .logo{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ff7f1c;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.head-content .search{
+    margin: 0;
+    padding: 0;
+    float: right;
+    line-height: 50px;
+}
+.search div{
+    height: 50px;
+    float: left;
+}
+.search input{
+    width: 230px;
+    height: 33px;
+    outline: none;
+    font-size: 20px;
+}
+.search-img i{
+    font-size: 20px;
+}
+.search .search-img:hover{
+    background-color: #ff7f1c;
+    color: white;
+    border-color: #ff7f1c;
+}
+.search .search-img{
+    margin-top: 5px;
+    width: 50px;
+    height: 37px;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    color: #282828;
+}
+/*底部*/
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    padding-top: 60px;
+}
+.service{
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+}
+.service hr{
+    height:1px;
+    border:none;
+    border-top:1px solid #e2e2e2;
+}
+.service-item {
+    width: 1093px;
+    height: 50px;
+    padding:0 90px;
+    margin-bottom: 10px;
+}
+.service-item a{
+    color: #666666;
+}
+.service-item a:hover{
+    color: #ff7f1c;
+}
+.service-item span{
+    margin: 0 40px;
+}
+.service-item i{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-right: 5px;
+    color: #949494;
+}
+.info{
+    width: 1226px;
+    height: 136px;
+    padding: 40px 0;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 14px;
+}
+.info a{
+    color: #666666;
+}
+.info a:hover{
+    color: #ff7f1c;
+}
+.info div{
+    float: left;
+    margin: 0 45px;
+}
+.info-list{
+    border: 1px transparent solid;
+    border-right-color: #cccccc;
+    padding-right: 80px;
+}
+.info .info-right{
+    width: 200px;
+    height: 192px;
+    margin:  0 ;
+    text-align: center;
+}
+.info .info-right-content{
+    width: 200px;
+    height: 136px;
+    margin: 0;
+}
+.info-right-content h2{
+    color: #ff7f1c;
+}
+.info .info-right-content .box{
+    margin-top: 10px;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    border: 1px solid#ff7f1c;
+}
+.sign{
+    width:100%;
+    height: 150px;
+    padding-top: 50px;
+    background-color: #f2f2f2;
+}
+.sign-content div{
+    float: left;
+}
+.sign-content p{
+    margin: 3px 5px;
+}
+.sign-content{
+    margin: 0 auto;
+    width: 1226px;
+    height: 57px;
+    font-size: 12px;
+    color: #666666;
+}
+.sign-logo{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff7f1c;
+}
+.single-img {
+    width: 85px;
+    height: 28px;
+}
+.rubbish{
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 20px;
+    color: #666666;
+    height: 43px;
+    width: 1226px;
+    text-align: center;
+}

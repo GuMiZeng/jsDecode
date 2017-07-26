@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #f9f9f9;
+    font-size: 0.25rem;
+    color: #5d5d5d;
+}
+.register{
+    width: 100%;
+    color: #666666;
+}
+.register-title{
+    text-align: center;
+    font-size: 0.4rem;
+    font-weight: 300;
+
+}
+.register-form{
+    width: 100%;
+}
+.form-content{
+    padding: 0 0.5rem;
+}
+.register-form select{
+    width: 100%;
+    height: 0.8rem;
+    padding: 0 0.2rem;
+    margin: 0.2rem auto ;
+    border: .01rem solid #cccccc;
+    border-radius: 0.15rem;
+    background: transparent;
+    outline: none;
+}
+.register-form input{
+    height: 0.8rem;
+    padding: 0 0.2rem;
+    border: .01rem solid #b1b1b1;
+    border-radius: 0.15rem;
+    outline: none;
+}
+.recommend{
+    color: red;
+    font-size: 0.2rem;
+}
+.phone{
+    width: 100%;
+}
+.phone input{
+    width: 93%;
+    margin: 0.2rem auto ;
+    height: 0.8rem;
+}
+.register-pwd{
+    width: 100%;
+    margin: 0.2rem 0;
+    display: inline-block;
+}
+.register-pwd input{
+    outline: none;
+}
+.register-pwd img{
+    height: 0.8rem;
+    vertical-align: top;
+}
+.register-btn{
+    width: 100%;
+    padding: 1rem 0;
+    height: 3.5rem;
+}
+.register-btn input{
+    height: 0.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #33b4ff;
+    width: 100%;
+    color: white;
+    font-size: 0.3rem;
+}
+.register-btn a{
+    font-weight: 700;
+    color: #222222;
+}

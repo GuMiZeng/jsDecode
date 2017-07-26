@@ -1,0 +1,149 @@
+.personalCenter{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.personal-content{
+    width: 1226px;
+    margin: 20px auto;
+    background-color: white;
+}
+.personal-title{
+    height: 20px;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+    color:#5d5d5d;
+    font-size: 14px;
+}
+.personal-body{
+    width: 1226px;
+    height: 1020px;
+    background-color: #f2f2f2;
+}
+.personal-left{
+    width: 233px;
+    float: left;
+    overflow: hidden;
+    padding-top: 50px;
+    font-size: 16px;
+    color: #5d5d5d;
+    background-color: white;
+}
+.personal-left ul li{
+    width: 200px;
+    margin: 10px 0;
+}
+.personal-left ul li h4{
+    margin: 30px 0;
+    font-weight: 500;
+    color: #353535;
+}
+.personal-left ul li a{
+    color: #5d5d5d;
+    font-size: 14px;
+}
+.personal-left ul li a:hover{
+    color: #ff7f1c;
+}
+.personal-right{
+    float: left;
+    height: 677px;
+    background-color: white;
+    margin-left: 30px;
+}
+.personal-info{
+    height: 172px;
+    padding: 20px 10px;
+}
+.personal-info ul{
+    float: left;
+    width: 300px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.personal-info ul li{
+    margin: 10px 0;
+    font-size: 14px;
+}
+.personal-info ul li a{
+    color: #ff7f1c;
+}
+.personal-info ul li input{
+    width: 80px;
+    height: 20px;
+    background-color: #ff7f1c;
+    color:white;
+    border: none;
+    float: right;
+}
+.head-img{
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+}
+.head-img img{
+    width: 160px;
+    height: 160px;
+}
+.head-info ul li input{
+    width: 120px;
+    height: 20px;
+    float: right;
+    color: white;
+    border: none;
+    background-color: #ff7f1c;
+}
+.personal-right-content{
+    width: 920px;
+    margin: 0 auto;
+    height: 250px;
+}
+.personal-right-content hr{
+    height: 1px;
+    border: none;
+    border-top: 1px solid #cccccc;
+}
+.personal-right-content div{
+    float: left;
+    margin: 15px 10px;
+    width: 440px;
+    color: #4a4a4a;
+}
+.personal-right-content h4{
+    margin-top: 30px;
+}
+.personal-right-content p{
+    color: #ababab;
+}
+.personal-right-content div:hover p{
+    color: #ff7f1c;
+}
+.personal-right-content .iconfont{
+    font-size: 65px;
+    float: left;
+    margin-right: 10px;
+}
+.icon-kabao,.icon-iconfonthuoche,.icon-xinxi,.icon-like{
+    width:100px;
+    height: 100px;
+    line-height: 100px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.icon-kabao{
+    background-color: #ff7f1c;
+}
+.icon-iconfonthuoche{
+    background-color: #0cd255;
+}
+.icon-xinxi{
+    background-color: #0ad2ee;
+}
+.icon-like{
+    background-color: #ffbb46;
+}

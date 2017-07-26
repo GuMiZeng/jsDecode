@@ -1,0 +1,85 @@
+body{
+    background-color: #f2f2f2;
+}
+.register{
+    width: 852px;
+    height: 700px;
+    margin: 25px auto;
+    background-color: white;
+    text-align: center;
+}
+.register-content{
+    margin: 0 auto;
+    padding-top:80px;
+    width: 332px;
+    position:relative;
+}
+.register-logo{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left:-25px;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    background-color:#ff7f1c;
+}
+.register-logo img{
+    width:50px;
+    height:50px
+}
+.register-title{
+    font-size: 25px;
+    margin: 50px auto;
+}
+.register-content.register-title span{
+    color:#666666;
+}
+.register-form input{
+    padding-left: 5px;
+    width: 332px;
+    height: 40px ;
+    margin: 20px auto;
+    border: 1px solid #cccccc;
+}
+.register-form input[type=submit]{
+    background-color: #ff7f1c;
+    width: 338px;
+    color: white;
+    font-size: 18px;
+}
+.register-form input[name=verify]{
+    clear: both;
+    float: left;
+    margin-top: 10px;
+    width: 166px;
+}
+.verify-img{
+    margin-top: 20px;
+    display: inline-block;
+    width: 152px;
+    height: 40px;
+}
+.verify-img img{
+    width: 152px;
+    height: 40px;
+}
+.register-form span{
+    font-size: 12px;
+    color: #666666;
+}
+.register-form span a{
+    color: #282828;
+    font-weight: 700;
+}
+.register-form form span{
+    color: red;
+}
+.footer{
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+}

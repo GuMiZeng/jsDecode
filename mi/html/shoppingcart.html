@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shoppingcart</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/shoppingcart.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_uulueq2m4edpwrk9.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_lb5brs6a302lz0k9.css">
+
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="cart">
+    <div class="cart-top">
+        <div class="sign-logo">
+            <a href="index.html"><img src="../img/mi-logo.png"/></a>
+        </div>
+        <div class="mycart">
+            <span>我的购物车</span><small>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</small>
+        </div>
+        <div class="login-register">
+            <a href="login.html">登录</a><span>|</span><a href="register.html">注册</a>
+        </div>
+    </div>
+    <div class="cart-content">
+        <div class="border-top"></div>
+        <div class="product-list">
+            <div class="list-content">
+                    <div class="list-head">
+                        <div class="col-check"><input type="checkbox" ng-model="allcheck" ng-click="checkAll()">&nbsp;全选</div>
+                        <div class="col-img">&nbsp;</div>
+                        <div class="col-name">商品名称</div>
+                        <div class="col-price">单价</div>
+                        <div class="col-num">数量</div>
+                        <div class="col-total">小计</div>
+                        <div class="col-action">操作</div>
+                    </div>
+                <hr/>
+                <div class="list-body">
+                    <div class="body-content" ng-repeat="x in model" style="float: none;">
+                        <div class="col-check">
+                            <input type="checkbox" ng-model="x.check" ng-click="check()">
+                        </div>
+                        <div class="col-img">
+                            <img ng-src="{{x.src}}">
+                        </div>
+                        <div class="col-name">
+                            <a href="javascript:void(0);">{{ x.name }}</a><br>
+                            <small>适配机型： 小米手机5</small>
+                        </div>
+                        <div class="col-price">{{ x.price }}元</div>
+                        <div class="col-num">
+                            <div class="col-num-border">
+                                <a href="javascript:void(0)" class="J_minus" ng-click="reduceNum($index)">
+                                    <i class="iconfont">-</i>
+                                </a>
+                                <input type="text" name="product01" value="1" class="goods-num J_goodsNum" ng-model="x.num">
+                                <a href="javascript:void(0)" class="J_plus" ng-click="addNum($index)"><i class="iconfont">+</i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-total" ng-model="price">{{ x.subtotal }}元</div>
+                        <div class="col-action" ng-click="deleteItem($index)">x</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="item">
+                    <a href="javascript:void(0)"><i class="iconfont icon-add "></i></a>
+                    <span>+25元得小米活塞耳机 清新版</span>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(0)"><i class="iconfont icon-add "></i></a>
+                    <span>+18元得最生活毛巾·青春系列</span>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(0)"><i class="iconfont icon-add "></i></a>
+                    <span>+39元得小米自拍杆（线控版）</span>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(0)"><i class="iconfont icon-add "></i></a>
+                    <span>+14.9元得小米LED随身灯</span>
+                </div>
+                <div class="item">
+                    <a href="javascript:void(0)"><i class="iconfont icon-add "></i></a>
+                    <span>+9.9元得彩虹5号电池（10粒装）</span>
+                </div>
+                <div class="account">
+                    <div class="account-left">
+                        <a href="index.html">继续购物</a>
+                        <span class="cart-total">共 <strong id="J_cartTotalNum">{{ NUM }}</strong> 件商品，已选择
+                        <strong id="J_selTotalNum">{{ NUM }}</strong> 件</span>
+                        <span class="cart-coudan hide" id="J_coudanTip">
+                        ，还需 <i id="J_postFreeBalance"></i> 元即可免邮费  <a href="index.html">立即凑单</a>
+                    </span>
+                    </div>
+                        <span class="total-price">
+                        合计（不含运费）：<span id="J_cartTotalPrice">{{ total }}</span>元
+                            <input type="button" value="去结算"/>
+                        </span>
+                    <!--<span class="activity-money hide">-->
+                        <!--活动优惠：减 <i id="J_cartActivityMoney">0</i> 元-->
+                    <!--</span>-->
+
+                    <!--<div class="no-select-tip hide" id="J_noSelectTip">-->
+                        <!--请勾选需要结算的商品-->
+                        <!--<i class="arrow arrow-a"></i>-->
+                        <!--<i class="arrow arrow-b"></i>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <!--推荐产品-->
+        <div class="other">
+            <div class="other-title">
+                <h1>买购物车商品的人还买了</h1>
+                <hr/>
+            </div>
+            <div class="other-product">
+                <div class="hardware-content clear">
+                    <div class="hardware-content-item">
+                        <img src="../img/hardware/hardware2.jpg" />
+                        <div class="item-text">
+                            <strong> 小米活塞耳机 清新版</strong><br/>
+                            <p>29元</p>
+                            <small>3万人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/hardware/hardware3.jpg" />
+                        <div class="item-text">
+                            <strong>小米圈铁耳机</strong><br/>
+                            <p>99元</p>
+                            <small>3.6万人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/hardware/hardware4.jpg" />
+                        <div class="item-text">
+                            <strong>10000mAh小米移动电源2</strong><br/>
+                            <p>79元</p>
+                            <small>3.5万人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/hardware/hardware5.jpg" />
+                        <div class="item-text">
+                            <strong>小米自拍杆（线控版）</strong><br/>
+                            <p>49元</p>
+                            <small>9777人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/hardware/hardware6.jpg" />
+                        <div class="item-text">
+                            <strong>小米指环支架</strong><br/>
+                            <p>19元</p>
+                            <small>1万人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/img-1/032.jpg"/>
+                        <div class="item-text">
+                            <strong>小米二合一数据线100cm</strong><br/>
+                            <p>24.9元</p>
+                            <small>5645人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/img-1/033.jpg" />
+                        <div class="item-text">
+                            <strong>小米蓝牙耳机青春版</strong><br/>
+                            <p>59元</p>
+                            <small>2万人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/img-1/003.jpg" />
+                        <div class="item-text">
+                            <strong>小米LED随身灯 增强版</strong><br/>
+                            <p>19.9元</p>
+                            <small>3.1万人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/img-1/002.jpg "/>
+                        <div class="item-text">
+                            <strong>小米二合一数据线30cm</strong><br/>
+                            <p>19元</p>
+                            <small>5692人好评</small>
+                        </div>
+                    </div>
+                    <div class="hardware-content-item">
+                        <img src="../img/img-1/001.jpg "/>
+                        <div class="item-text">
+                            <strong>小米二合一数据线30cm</strong><br/>
+                            <p>19元</p>
+                            <small>5692人好评</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="service">
+        <div class="service-item">
+            <i class="iconfont icon-banshou"></i><a>预约维修服务</a><span>|</span>
+            <i class="iconfont icon-7"></i><a>7天无理由退货</a><span>|</span>
+            <i class="iconfont icon-15"></i><a>15天免费换货</a><span>|</span>
+            <i class="iconfont icon-liwu"></i><a>满150元包邮</a><span>|</span>
+            <i class="iconfont icon-dingwei"></i><a>520余家售后网点</a>
+        </div>
+        <hr/>
+    </div>
+    <div class="info">
+        <div>
+            <p><a href="javascript:void(0);"><strong>帮助中心</strong></a></p>
+            <p><a href="javascript:void(0);">账户管理</a></p>
+            <p><a href="javascript:void(0);">购物指南</a></p>
+            <p><a href="javascript:void(0);">订单操作</a></p>
+        </div>
+        <div>
+            <p><a href="javascript:void(0);"><strong>服务支持</strong></a></p>
+            <p><a href="javascript:void(0);">售后政策</a></p>
+            <p><a href="javascript:void(0);">自助服务</a></p>
+            <p><a href="javascript:void(0);">相关下载</a></p>
+        </div>
+        <div>
+            <p><a href="javascript:void(0);"><strong>线下门店</strong></a></p>
+            <p><a href="javascript:void(0);">小米之家</a></p>
+            <p><a href="javascript:void(0);">服务网点</a></p>
+            <p><a href="javascript:void(0);">零售网点</a></p>
+        </div>
+        <div>
+            <p><a href="javascript:void(0);"><strong>关于小米</strong></a></p>
+            <p><a href="javascript:void(0);">了解小米</a></p>
+            <p><a href="javascript:void(0);">加入小米</a></p>
+            <p><a href="javascript:void(0);">联系我们</a></p>
+        </div>
+        <div>
+            <p><a href="javascript:void(0);"><strong>关注我们</strong></a></p>
+            <p><a href="javascript:void(0);">新浪微博</a></p>
+            <p><a href="javascript:void(0);">小米部落</a></p>
+            <p><a href="javascript:void(0);">官方微信</a></p>
+        </div>
+        <div class="info-list">
+            <p><a href="javascript:void(0);"><strong>特色服务</strong></a></p>
+            <p><a href="javascript:void(0);"> F 码通道</a></p>
+            <p><a href="javascript:void(0);">礼物码</a></p>
+            <p><a href="javascript:void(0);">防伪查询</a></p>
+        </div>
+        <div class="info-right">
+            <div class="info-right-content">
+                <h2>400-100-5678</h2>
+                <span>周一至周日 8:00-18:00</span><br/>
+                <span>（仅收市话费）</span><br/>
+                <div class="box">
+                    24小时在线客服
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sign">
+        <div class="sign-content">
+            <div class="sign-logo">
+                <img src="../img/mi-logo.png"/>
+            </div>
+            <div>
+                <p><strong>小米商城|MIUI|米聊|多看书城|小米路由器|视频电话|小米天猫店|小米淘宝直营店|小米网盟|小米移动|隐私政策|Select Region</strong></p>
+                <p>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号</p>
+                <p> 违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+            </div>
+            <div class="float-right" style="float: right">
+                <img class="single-img" src="../img/sign/sign1.png" height="57" width="169"/>
+                <img src="../img/sign/sign2.png" height="28" width="85"/>
+                <img src="../img/sign/sign3.png" height="28" width="85"/>
+                <img src="../img/sign/sign4.png" height="28" width="85"/>
+
+            </div>
+        </div>
+        <div class="rubbish">
+            探索黑科技，小米为发烧而生！
+        </div>
+    </div>
+</div>
+
+<script src="../js/angular-1.6.4.min.js"></script>
+<script>
+//    var app = angular.module('myShoppingCart', []);
+//    app.controller('cartControl', function($scope) {
+//        $scope.address = '';
+//        $scope.phone = '';
+//        $scope.verify = '';
+//    });
+</script>
+<script src="../js/shoppingcart.js"></script>
+</body>
+</html>

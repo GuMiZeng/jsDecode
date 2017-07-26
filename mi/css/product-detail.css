@@ -1,0 +1,363 @@
+hr{
+    border: none;
+    height: 1px;
+    border-top:1px solid #e5e5e5;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    font-weight: 700;
+}
+.product-content{
+    width: 100%;
+    margin-bottom: 1px;
+}
+#zlight-nav{
+    width: 100%;
+    z-index: 40;
+    height: 60px !important;
+    background-color: white !important;
+}
+.product-head{
+    width: 1226px !important;
+    height: 55px !important;
+    margin: 0 auto !important;
+    position: relative;
+}
+.product-head-left{
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.product-head-right{
+    float: right;
+    height: 60px;
+    line-height: 60px;
+}
+.product-head-right a{
+    color: #5d5d5d;
+}
+.product-head-right a:hover{
+    color: #ff7f1c;
+}
+.product-head-right .active{
+    color: #ff7f1c;
+}
+.product-head-right span{
+    margin: 0 5px;
+    color: #929292;
+}
+.product-head-right input{
+    width: 120px;
+    height: 30px;
+    background-color: #ff6c10;
+    color: white;
+    text-align: center;
+    border: none;
+}
+.product-summarize{
+    width: 100%;
+    height: 565px;
+    background: url("../img/product/socketphoto-0101.jpg")no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+.summarize-text{
+    width: 450px;
+    height: 212px;
+    float: left;
+    margin-left: 400px;
+    margin-top: 100px;
+    color: #222222;
+
+}
+.summarize-text p{
+    font-size: 40px;
+    font-weight: 500;
+}
+.summarize-img img{
+    width: 687px;
+    height: 705px;
+    position: absolute;
+    right: 50px;
+}
+.summarize-price{
+    margin: 25px 0;
+    color: #007ae0;
+}
+.summarize-price-text{
+    font-size: 50px;
+    font-weight: 700;
+    color: #007ae0;
+}
+.product-phone{
+    width: 100%;
+    height: 635px;
+    background: url("../img/product/socketphoto-0202.jpg")no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+}
+.phone-text ,.powerSaving-text{
+    width: 700px;
+    padding: 115px  300px;
+    height: 163px;
+    margin: 0 auto;
+    color: #e1e1e1;
+    text-align: center;
+}
+.phone-text h2,.phone-text a{
+    font-weight: 500;
+    color: white;
+}
+.phone-img {
+    width: 687px;
+    height: 428px;
+    position: absolute;
+    left: 50%;
+    margin-left: -344px;
+    bottom: -100px;
+    background: url("../img/product/socketphoto-cz-02.png")no-repeat center center;
+    background-size: 100%;
+}
+.phone-img div{
+    float: left;
+    width: 229px;
+    text-align: center;
+    color: #535353;
+    font-size: 14px;
+    padding-top: 450px;
+}
+.product-powerSaving{
+    width: 100%;
+    height: 635px;
+    background: url("../img/product/socketphoto-03.jpg")no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 8;
+    color: #282828;
+}
+.powerSaving-text{
+    color: #343434;
+    font-size: 14px;
+    padding-top: 220px;
+}
+.powerSaving-text h2{
+    color: #343434;
+}
+.product-light{
+    width: 100%;
+    height: 522px;
+    background: url("../img/product/socketphoto-04.jpg")no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 7;
+}
+.light-text{
+    position: absolute;
+    width: 410px;
+    height: 164px;
+    top: 100px;
+    right: 6%;
+}
+.light-text h2{
+    margin: 5px 0;
+    font-weight: 500;
+}
+.light-text p{
+    color: #5d5d5d;
+    font-size: 14px;
+}
+.product-material{
+    width: 100%;
+    height: 522px;
+    background: url("../img/product/socketphoto-05.jpg")no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+.material-text{
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 14px;
+}
+.material-text h2{
+    margin: 0;
+}
+.material-text p{
+    color: #5d5d5d;
+}
+.product-safety{
+    width: 100%;
+    height: 522px;
+    background: url("../img/product/socketphoto-06.jpg")no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.safety-text h3{
+    margin: 15px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+.safety-text p{
+    font-size: 14px;
+}
+.safety-text ul{
+    position: absolute;
+    padding: 0;
+    left: 48%;
+    top: 50%;
+    width: 1060px;
+    margin-left: -530px;
+    height: 240px;
+    margin-top: -120px;
+    color: #fff;
+}
+.safety-text ul li{
+    float: left;
+    width: 150px;
+    padding: 0 30px;
+    text-align: center;
+}
+.safety-text ul li i{
+    display: block;
+    width: 130px;
+    height: 130px;
+    background: url("../img/product/powerstrip-icon.png") no-repeat;
+    margin: auto;
+
+}
+.safety-text ul li i.trip-icon-01{
+    background-position: -13px -27px;
+}
+.safety-text ul li i.trip-icon-02{
+    background-position: -398px -27px;
+}
+.safety-text ul li i.trip-icon-03{
+    background-position: -782px -27px;
+}
+.safety-text ul li i.trip-icon-04{
+    background-position: -1162px -27px;
+}
+.safety-text ul li i.trip-icon-05{
+    background-position: -1551px -27px;
+}
+.product-carousel{
+    width: 100%;
+    height: 522px;
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.carousel-img1, .carousel-img2{
+    position: absolute;
+    top: 0;
+}
+.carousel-img1{
+    width: 100%;
+    height: 522px;
+    background: url("../img/product/socketphoto-07-01.jpg");
+    background-size: cover;
+}
+.carousel-img2{
+    width: 100%;
+    height: 522px;
+    background: url("../img/product/socketphoto-07-02.jpg");
+    background-size: cover;
+}
+.carousel-img-item{
+    position: absolute;
+    z-index: 20;
+    bottom: 20px;
+    width: 150px;
+    height: 5px;
+    left: 50%;
+    margin-left: -75px;
+}
+.carousel-img-item span{
+    float: left;
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin: 10px;
+}
+.product-antiskid{
+    width: 100%;
+    height: 522px;
+    background: url("../img/product/socketphoto-08.jpg")no-repeat center center;
+    background-size: cover;
+    text-align: left;
+}
+.antiskid-text{
+    width: 410px;
+    height: 143px;
+    margin-left: 100px;
+    padding-top: 160px;
+    color: #5d5d5d;
+}
+h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #454545;;
+}
+.product-plug{
+    width: 100%;
+    height: 522px;
+    background: url("../img/product/socketphoto-09.jpg")no-repeat center center;
+    background-size: cover;
+    text-align: left;
+}
+.plug-text{
+    float: right;
+    width: 300px;
+    height: 143px;
+    margin-right: 200px;
+    padding-top: 180px;
+    color: #5d5d5d;
+}
+.plug-text p{
+    font-size: 14px;
+}
+.product-app{
+    width: 100%;
+    height: 522px;
+    background: url("../img/product/socketphoto-10.jpg")no-repeat center center;
+    background-size: cover;
+}
+.app-text{
+    width: 50%;
+    padding-top: 50px;
+    height: 472px;
+    margin: 0 auto;
+}
+.app-text-title{
+    text-align: center;
+}
+.app-text-title p{
+    font-size: 14px;
+}
+.app-text-content{
+    margin-top: 215px;
+    font-size: 13px;
+    text-align: left;
+    color: #5d5d5d;
+}
+.app-text-content span{
+    display: inline-block;
+    width: 32.9%;
+    text-align: center;
+}
+.app-text-bottom{
+    margin-top: 80px;
+    font-size: 12px;
+    text-align: center;
+    color: #5d5d5d;
+}
+.app-text-bottom span{
+    color: #222222;
+}

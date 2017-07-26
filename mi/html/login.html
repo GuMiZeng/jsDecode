@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:http="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/angular-1.6.4.min.js"></script>
+</head>
+<body>
+    <div class="login">
+        <div class="top">
+                <a href="index.html"><img src="../img/mistore_logo.png"/></a>
+        </div>
+        <div class="login-info">
+            <div class="info">
+                <div class="info-title">
+                    <a href="javascript:void(0);" class="active">帐号登录</a>
+                        <span>|</span>
+                    <a href="javascript:void(0);">扫码登录</a>
+                </div>
+                <div class="info-form">
+                    <form ng-submit="submit(myLoginForm.$valid)" ng-model="myForm" ng-app="myLogin" ng-controller="loginFormCtrl" name="myLoginForm"  novalidate>
+                        <input type="text" placeholder="手机号码" name="user" ng-model="user" required ng-pattern="/13[123569]{1}\d{8}|15[1235689]\d{8}|18\d{9}/" />
+                        <span style="color: red ;float: left" ng-show="myLoginForm.user.$dirty && myLoginForm.user.$invalid">
+                            <span ng-show="myLoginForm.user.$error.required">必填（手机号）</span>
+                            <span ng-show="myLoginForm.user.$error.pattern">输入正确的11位手机号码</span>
+                        </span>
+
+
+                        <input type="password" placeholder="密码" name="password" ng-model="password" ng-pattern="/^[a-zA-Z]{1}([a-zA-Z0-9]){6,16}$/" required maxlength="16"/>
+                        <span style="color: red;float: left" ng-show="myLoginForm.password.$dirty && myLoginForm.password.$invalid">
+                            <span ng-show="myLoginForm.password.$error.required">请输入密码</span>
+                            <span ng-show="myLoginForm.password.$error.pattern">请输入6-16位的密码(包含数字，字母以及下划线)</span>
+                        </span>
+
+                        <input type="submit" value="立即登录" ng-disabled="myFormLogin.$inValid"/>
+                    </form>
+                </div>
+                <div class="remind">
+                    <a href="register.html">注册小米账号</a>
+                    <span>|</span>
+                    <a href="javascript:void(0);">忘记密码？</a>
+                </div>
+                <div class="else">
+                    <span>其他方式登录</span>
+                    <hr/>
+                    <div class="else-logo">
+                        <i class="iconfont icon-qq"></i><i class="iconfont icon-weixin"></i><i class="iconfont icon-zhifubao"></i><i class="iconfont icon-weibo"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>简体| 繁体| English| 常见问题</p>
+            <p>小米公司版权所有-京ICP备10046444-<img src="../img/ghs.png"/>京公网安备11010802020134号-京ICP证110507号</p>
+        </div>
+    </div>
+<script>
+
+    var app = angular.module('myLogin', []);
+    app.controller('loginFormCtrl', function($scope) {
+
+        $scope.submit = function (isValid) {
+            if(isValid){
+                window.location.href='index.html';
+            }else {
+                return false;
+            }
+        }
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+body{
+    padding:0;
+    margin:0;
+    min-width:1226px;
+}
+hr{
+    margin: 0;
+    border: none;
+    height: 1px;
+    border-top:1px solid #e6e6e6;
+}
+.cart{
+    width: 100%;
+    color: #5d5d5d;
+}
+.cart-top{
+    width: 1226px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto;
+}
+.cart-top div{
+    float: left;
+    margin-right: 30px;
+}
+.mycart{
+    width: 610px;
+    height: 48px;
+    font-size: 28px;
+    color: #4a4a4a;
+}
+.mycart small{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.cart-top .login-register{
+    font-size: 12px;
+    width: 90px;
+    height: 48px;
+    line-height: 48px;
+    float: right;
+}
+.login-register a{
+    color: #666666;
+    margin: 0 5px;
+}
+.border-top{
+    width: 100%;
+    height: 3px;
+    background-color: #ff7f1c;
+    margin-bottom: 50px;
+}
+.cart-content{
+    width:100%;
+    background-color: #f2f2f2;
+}
+.product-list {
+    width: 1226px;
+    margin: 0 auto;
+}
+.list-content{
+    width: 1226px;
+    font-size: 15px;
+    background-color: white;
+}
+.list-head{
+    width: 1226px;
+    height: 70px;
+}
+.list-head div{
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    color: #444444;
+}
+.col-check{
+    width: 110px;
+    text-align: center;
+
+}
+.col-img{
+    width: 120px;
+}
+.col-img img{
+    width: 80px;
+    height: 80px;
+}
+.col-name{
+    width: 380px;
+}
+.col-price{
+    width: 75px;
+    padding-right: 84px;
+    text-align: center;
+}
+.col-num{
+    width: 150px;
+    text-align: center;
+}
+.col-total{
+    width: 120px;
+    padding-right: 81px;
+    text-align: right;
+}
+.col-action{
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+}
+.list-body{
+    width: 1226px;
+}
+.list-body div{
+    float: left;
+    height: 80px;
+    line-height: 80px;
+}
+.body-content{
+    width: 1226px;
+    height: 87px;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+.body-content .col-name{
+    padding-top: 10px;
+    line-height: 35px;
+}
+.body-content .col-name a,.body-content .col-num-border a{
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #282828;
+}
+.body-content .col-num-border{
+    width: 148px;
+    height: 40px;
+    margin-top: 20px;
+    line-height: 38px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    zoom: 1;
+
+}
+.col-num-border input{
+    height: 30px;
+    width: 72px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.col-num-border i{
+    font-size: 25px;
+}
+.body-content .col-total{
+    color: #ff7f1c;
+}
+.list-item{
+    margin-top: 20px;
+    width: 1226px;
+    overflow: visible;
+    padding-bottom: 20px;
+    /*height: 290px;*/
+}
+.list-item div{
+    width: 1226px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 1px;
+    background-color: white;
+    color: #6666;
+    font-size: 14px;
+}
+.list-item a{
+    color: #ff7f1c;
+    font-size: 20px;
+    margin: 0 10px 0 25px;
+}
+.item:hover{
+    background-color: rgba(204, 204, 204, 0.1);
+}
+.item i{
+    font-size: 20px;
+}
+.list-item .account{
+    margin: 20px 0;
+}
+.list-item .account .account-left{
+    width: 300px;
+    float: left;
+}
+.account-left a{
+    color: #5d5d5d;
+    font-size: 15px;
+}
+.account-left strong{
+    color: #ff7f1c;
+}
+.account-left a:hover{
+    color: #ff7f1c;
+}
+.total-price{
+    width: 450px;
+    float: right;
+    color: #ff7f1c;
+}
+.total-price span{
+    font-size: 25px;
+}
+.total-price input{
+    float: right;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #ff7f1c;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.hide{
+     display: none;
+ }
+.other{
+    width: 1226px;
+    padding-top: 100px;;
+    margin: 0 auto;
+}
+.other-title{
+    width: 1226px;
+    height: 80px;
+    position: relative;
+}
+.other .other-title h1{
+    width: 380px;
+    position: absolute;
+    top: -40px;
+    left: 424px;
+    background: #f2f2f2;
+    text-align: center;
+    font-weight: 500;
+}
+.other-product{
+    width: 1226px;
+    height: 700px;
+    overflow: hidden;
+}
+.hardware{
+    width: 1226px;
+    margin: 0 auto;
+    clear: both;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+.hardware-content-item{
+    float: left;
+    width: 234px;
+    height: 300px;
+    background-color: white;
+    margin: 0 0 14px 10px;
+    text-align: center;
+}
+.hardware-content-item img{
+    width: 160px;
+    height: 160px;
+}
+.hardware-content-item p{
+    color: #ff7f1c;
+}

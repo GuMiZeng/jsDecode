@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+    <div class="register">
+        <div class="register-title">
+            <p>注册小米账号</p>
+        </div>
+        <div class="register-form">
+           <div class="form-content">
+               <select name="address">
+                   <option>中国(+86)</option>
+                   <option>中国台湾(+886)</option>
+                   <option>中国香港(+852)</option>
+               </select>
+
+               <div class="phone">
+                   <input id="iphone" type="text" placeholder="输入手机号码">
+               </div>
+                <div class="recommend">
+                    请输入正确的手机号码
+                </div>
+               <div class="register-pwd">
+                   <input class="confirm-input" type="text" placeholder="图片验证">
+                   <img src="../img/getCode">
+               </div>
+               <div class="register-btn">
+                   <input id="submit" type="button" value="立即注册">
+                   <p>
+                      点击“立即注册”，基表示您同意并愿意遵守小米<a href="#">用户协议</a>和<a href="#">隐私政策</a>
+                   </p>
+               </div>
+           </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="language">
+            <a class="active-language" href="#">简体</a><span>|</span>
+            <a href="#">繁体</a><span>|</span>
+            <a href="#">English</a><span>|</span>
+            <a href="#">常见问题</a>
+        </div>
+        <div class="confirm">
+            <p>小米公司版权所有-京ICP备1004644-<img src="../img/ghs.png">京公网安备</p>
+            <p>10010802020134号-京ICP证110507号</p>
+        </div>
+    </div>
+    <script src="../js/auto-size.js"></script>
+
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $('.recommend').css('opacity','0');
+        $('#submit').attr('disabled',true);
+        $('#iphone').keyup(function () {
+            console.log($('#iphone').val());
+            var re = /13[123569]{1}\d{8}|15[1235689]\d{8}|18\d{9}/;
+            if(re.test($('#iphone').val())){
+                console.log('true');
+                $('.recommend').css('opacity','0');
+                $('#submit').removeAttr('disabled');
+            }else {
+                console.log('false');
+                $('.recommend').css('opacity','1');
+            }
+        });
+        $('#submit').click(function () {
+            window.location.href="login.html"
+        });
+
+    </script>
+</body>
+</html>
